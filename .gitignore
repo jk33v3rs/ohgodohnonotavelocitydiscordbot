@@ -1,0 +1,9 @@
+# Ignore IDE files
+.idea/
+*.iml
+
+# Ignore build files
+target/
+
+# Ignore config files
+config.yml
