@@ -7,3 +7,4 @@ target/
 
 # Ignore config files
 config.yml
+HEAD
