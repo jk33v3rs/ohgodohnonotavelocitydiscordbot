@@ -1,0 +1,1 @@
+{"id":"velocity-whitelist","name":"VelocityWhitelist","version":"1.9.0","description":"A plugin to manage Velocity whitelist configuration.","authors":["jk33v3rs"],"dependencies":[],"main":"com.keevers.velocitywhitelist.VelocityWhitelist"}

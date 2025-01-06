@@ -2,8 +2,9 @@ package com.keevers.velocitywhitelist;
 
 import com.keevers.chumpcode.ChumpCodeChecker;
 import com.keevers.logging.CustomLogger;
-import com.keevers.velocitydiscord.VelocityDiscordBot;
+import com.keevers.velocitydiscordbot.VelocityDiscordBot;
 import com.keevers.velocitymariadb.VelocityMariaDB;
+import com.tini.discordrewards.RewardsElf;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.connection.LoginEvent;
 import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
@@ -15,11 +16,11 @@ import net.luckperms.api.LuckPerms;
 import net.luckperms.api.LuckPermsProvider;
 import net.luckperms.api.model.user.User;
 import net.luckperms.api.node.Node;
-import org.slf4j.Logger;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
 import javax.inject.Inject;
+import javax.security.auth.login.LoginException;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -37,7 +38,7 @@ import java.util.Map;
 )
 public class VelocityWhitelist {
     private final ProxyServer server;
-    private final Logger logger;
+    private final CustomLogger logger;
     private final Path dataDirectory;
     private boolean configLoaded = false;
 
@@ -58,19 +59,23 @@ public class VelocityWhitelist {
     private ChumpCodeChecker chumpCodeChecker;
 
     @Inject
-    public VelocityWhitelist(ProxyServer server, Logger logger, @DataDirectory Path dataDirectory) {
+    public VelocityWhitelist(ProxyServer server, @DataDirectory Path dataDirectory) {
         this.server = server;
-        this.logger = logger;
+        this.logger = CustomLogger.getLogger();
         this.dataDirectory = dataDirectory.resolve("ohnovelocitywhitelist");
         CustomLogger.setup(this.dataDirectory);
-        this.chumpCodeChecker = new ChumpCodeChecker(logger);
+        this.chumpCodeChecker = new ChumpCodeChecker();
         this.configLoaded = ensureConfigLoaded();
         if (!configLoaded) {
-            this.logger.error("Failed to load configuration. Plugin functionality is disabled.");
-            CustomLogger.getLogger().severe("Failed to load configuration. Plugin functionality is disabled.");
+            this.logger.severe("Failed to load configuration. Plugin functionality is disabled.");
         } else {
-            this.discordBot = new VelocityDiscordBot(this.logger, this.discordBotToken, this.chumpCodeChecker);
-            this.mariaDB = new VelocityMariaDB(this.logger, this.mariadbHost, this.mariadbPort, this.mariadbUser, this.mariadbPassword, this.mariadbDatabase, this.mariadbTablePrefix);
+            try {
+                Map<String, Object> config = loadConfig(dataDirectory.resolve("config.yml"));
+                this.mariaDB = new VelocityMariaDB(logger, mariadbHost, mariadbPort, mariadbUser, mariadbPassword, mariadbDatabase, mariadbTablePrefix);
+                this.discordBot = new VelocityDiscordBot(mariaDB, new RewardsElf(logger), config);
+            } catch (LoginException e) {
+                logger.error("Failed to initialize Discord bot", e);
+            }
         }
     }
 
@@ -81,14 +86,12 @@ public class VelocityWhitelist {
             if (!Files.exists(dataDirectory)) {
                 Files.createDirectories(dataDirectory);
                 logger.info("Created directory: " + dataDirectory);
-                CustomLogger.getLogger().info("Created directory: " + dataDirectory);
                 pause(15000); // Pause for 15 seconds if directory is created
             }
 
             if (!Files.exists(configFile)) {
                 createDefaultConfig(configFile);
                 logger.info("Created default config file: " + configFile);
-                CustomLogger.getLogger().info("Created default config file: " + configFile);
                 pause(15000); // Pause for 15 seconds if config file is created
             }
 
@@ -97,8 +100,7 @@ public class VelocityWhitelist {
 
             return true;
         } catch (Exception e) {
-            logger.error("Failed to ensure configuration is loaded", e);
-            CustomLogger.getLogger().severe("Failed to ensure configuration is loaded: " + e.getMessage());
+            logger.severe("Failed to ensure configuration is loaded: " + e.getMessage());
             return false;
         }
     }
@@ -110,7 +112,7 @@ public class VelocityWhitelist {
             defaultConfig.put("hooks", Map.of("use_luckperms", true, "use_vault", false));
             defaultConfig.put("roles", Map.of("temp_access", "temp_role", "certified_cool_kid", "cool_kid_role"));
             defaultConfig.put("discord", Map.of("bot_name", "Bot Name", "server_id", "server_id", "bot_token", "your_bot_token", "listen_channels", List.of("channel_1", "channel_2"), "ignore_channels", List.of("channel_3")));
-            defaultConfig.put("commands", Map.of("give_cool_kid_juice", "/give cool kid juice to <minecraftusername>", "cool_kid_message", "<minecraftusername> got some cool kid juice. How is it?", "weird_response", "weird", "required_role", "cool kid"));
+            defaultConfig.put("commands", Map.of("give_cool_kid_juice", "/give cool kid juice to <minecraftusername>", "cool_kid_message", "<minecraftusername> got some cool kid juice. How is it?"));
             defaultConfig.put("geyser", Map.of("prefix", "."));
             defaultConfig.put("startups", 0);
 
@@ -121,12 +123,11 @@ public class VelocityWhitelist {
                 yaml.dump(defaultConfig, writer);
             }
         } catch (Exception e) {
-            logger.error("Failed to create default configuration", e);
-            CustomLogger.getLogger().severe("Failed to create default configuration: " + e.getMessage());
+            logger.severe("Failed to create default configuration: " + e.getMessage());
         }
     }
 
-    private void loadConfig(Path configFile) {
+    private Map<String, Object> loadConfig(Path configFile) {
         try (InputStream in = Files.newInputStream(configFile)) {
             Yaml yaml = new Yaml();
             Map<String, Object> config = yaml.load(in);
@@ -150,18 +151,19 @@ public class VelocityWhitelist {
             rolesCertifiedCoolKid = (String) rolesConfig.get("certified_cool_kid");
 
             logger.info("Configuration loaded successfully.");
-            CustomLogger.getLogger().info("Configuration loaded successfully.");
             // Log the loaded configuration values
-            CustomLogger.getLogger().info("MariaDB Host: " + mariadbHost);
-            CustomLogger.getLogger().info("MariaDB Port: " + mariadbPort);
-            CustomLogger.getLogger().info("MariaDB User: " + mariadbUser);
-            CustomLogger.getLogger().info("Discord Bot Token: " + discordBotToken);
-            CustomLogger.getLogger().info("Geyser Prefix: " + geyserPrefix);
-            CustomLogger.getLogger().info("Roles Temp Access: " + rolesTempAccess);
-            CustomLogger.getLogger().info("Roles Certified Cool Kid: " + rolesCertifiedCoolKid);
+            logger.info("MariaDB Host: " + mariadbHost);
+            logger.info("MariaDB Port: " + mariadbPort);
+            logger.info("MariaDB User: " + mariadbUser);
+            logger.info("Discord Bot Token: " + discordBotToken);
+            logger.info("Geyser Prefix: " + geyserPrefix);
+            logger.info("Roles Temp Access: " + rolesTempAccess);
+            logger.info("Roles Certified Cool Kid: " + rolesCertifiedCoolKid);
+
+            return config;
         } catch (Exception e) {
-            logger.error("Failed to load configuration", e);
-            CustomLogger.getLogger().severe("Failed to load configuration: " + e.getMessage());
+            logger.severe("Failed to load configuration: " + e.getMessage());
+            return null;
         }
     }
 
@@ -173,7 +175,7 @@ public class VelocityWhitelist {
             discordBot.initialize();
 
             // Register the new listener
-            VelocityListener listener = new VelocityListener(server, mariaDB, discordBot);
+            VelocityListener listener = new VelocityListener(server, mariaDB, discordBot, geyserPrefix, rolesTempAccess, rolesCertifiedCoolKid);
             server.getEventManager().register(this, listener);
             discordBot.getJDA().addEventListener(listener);
         }
@@ -196,21 +198,19 @@ public class VelocityWhitelist {
 
     private void assignRole(Player player, String role) {
         if (luckPerms == null) {
-            logger.error("LuckPerms API is not loaded, cannot assign role!");
-            CustomLogger.getLogger().severe("LuckPerms API is not loaded, cannot assign role!");
+            logger.severe("LuckPerms API is not loaded, cannot assign role!");
             return;
         }
         User user = luckPerms.getUserManager().getUser(player.getUniqueId());
         if (user != null) {
             user.data().add(Node.builder("group." + role).build());
             luckPerms.getUserManager().saveUser(user);
-            CustomLogger.getLogger().info("Assigned role " + role + " to player " + player.getUsername());
+            logger.info("Assigned role " + role + " to player " + player.getUsername());
         }
     }
 
     private void sendToHubAdventureMode(Player player) {
-        logger.info("Sending player {} to HUB in adventure mode", player.getUsername());
-        CustomLogger.getLogger().info("Sending player " + player.getUsername() + " to HUB in adventure mode");
+        logger.info("Sending player " + player.getUsername() + " to HUB in adventure mode");
         // ... (Logic to send player to hub)
     }
 
@@ -218,8 +218,7 @@ public class VelocityWhitelist {
         try {
             this.luckPerms = LuckPermsProvider.get();
         } catch (IllegalStateException e) {
-            logger.error("LuckPerms API is not loaded!", e);
-            CustomLogger.getLogger().severe("LuckPerms API is not loaded: " + e.getMessage());
+            logger.severe("LuckPerms API is not loaded: " + e.getMessage());
         }
     }
 
@@ -228,8 +227,7 @@ public class VelocityWhitelist {
             Thread.sleep(milliseconds);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            logger.error("Thread sleep interrupted", e);
-            CustomLogger.getLogger().severe("Thread sleep interrupted: " + e.getMessage());
+            logger.severe("Thread sleep interrupted: " + e.getMessage());
         }
     }
 }

@@ -1,0 +1,2036 @@
+[DEBUG] Created adapter factory; available factories [file-lock, rwlock-local, semaphore-local, noop]; available name mappers [discriminating, file-gav, file-hgav, file-static, gav, static]
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: jakarta.annotation.* < plexus.core
+[DEBUG]   Imported: jakarta.inject.* < plexus.core
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.api < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.feature < plexus.core
+[DEBUG]   Imported: org.apache.maven.graph < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.components.interactivity < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3DomBuilder < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transform < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.util < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.Ansi < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[DEBUG] Created new class realm maven.api.v4
+[DEBUG] Importing foreign packages into class realm maven.api.v4
+[DEBUG]   Imported: org.apache.maven.api < plexus.core
+[DEBUG]   Imported: org.slf4j < plexus.core
+[DEBUG] Populating class realm maven.api.v4
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[DEBUG] Reading installation settings from 'C:\Program Files\Apache\Maven\conf\settings.xml'
+[DEBUG] Reading project settings from 'D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\.mvn\settings.xml'
+[DEBUG] Reading user settings from 'C:\Users\User\.m2\settings.xml'
+[DEBUG] Reading installation toolchains from 'C:\Program Files\Apache\Maven\conf\toolchains.xml'
+[DEBUG] Reading user toolchains from 'C:\Users\User\.m2\toolchains.xml'
+[DEBUG] Using local repository at C:\Users\User\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\User\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] [1][general] PhasingExecutor created.
+[DEBUG] Reading file model from D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG] [1][close] Closing PhasingExecutor. Active tasks: 0
+[DEBUG] [1][close] All tasks completed. Shutting down executor.
+[DEBUG] [1][close] PhasingExecutor closed. Total completed tasks: 0
+[DEBUG] [2][general] PhasingExecutor created.
+[DEBUG] [2][task] Task submitted. Active tasks: 1
+[DEBUG] [2][close] Closing PhasingExecutor. Active tasks: 1
+[DEBUG] [2][close] Waiting for 1 active tasks to complete.
+[DEBUG] [2][task] Task executing. Active tasks: 1
+[DEBUG] Replacing repositories from com.keevers:velocity-whitelist:jar:2.0.0
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+[DEBUG] Extension realms for project com.keevers:velocity-whitelist:jar:2.0.0: (none)
+[DEBUG] [2][task] Task completed. Active tasks: 0
+[DEBUG] [2][task] Last task completed. Initiating executor shutdown.
+[DEBUG] [2][close] All tasks completed. Shutting down executor.
+[DEBUG] [2][close] PhasingExecutor closed. Total completed tasks: 1
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.keevers:velocity-whitelist:jar:2.0.0
+[DEBUG] Tasks:   [clean, install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] ---------------------------------------< com.keevers:velocity-whitelist >---------------------------------------
+[INFO] Building VelocityWhitelist 2.0.0
+[INFO]   from pom.xml
+[INFO] ----------------------------------------------------[ jar ]-----------------------------------------------------
+[DEBUG] Lifecycle clean -> [clean]
+[DEBUG] Lifecycle default -> [all, initialize, validate, build, sources, resources, compile, ready, package, verify, unit-test, test-sources, test-resources, test-compile, test, integration-test, install, deploy]
+[DEBUG] Lifecycle site -> [site, site-deploy]
+[DEBUG] Creating adapter using nameMapper 'file-gav' and factory 'file-lock'
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-plugins:35
+[DEBUG] Reading file model from org.apache.maven:maven-parent:35
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:35
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:25
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-clean-plugin:maven-plugin:3.2.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-plugins:39
+[DEBUG] Reading file model from org.apache.maven:maven-parent:39
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:39
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:29
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-resources-plugin:maven-plugin:3.3.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-compiler-plugin:3.11.0
+[DEBUG] Merging repositories from [inherited]:maven-compiler-plugin:maven-plugin:3.11.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:3.11.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire:3.2.5
+[DEBUG] Reading file model from org.apache.maven:maven-parent:41
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:41
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:31
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.junit:junit-bom:5.9.3
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-jar-plugin:3.4.1
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-plugins:42
+[DEBUG] Reading file model from org.apache.maven:maven-parent:42
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:42
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:32
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-jar-plugin:maven-plugin:3.4.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.junit:junit-bom:5.10.2
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-shade-plugin:3.4.1
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-plugins:37
+[DEBUG] Reading file model from org.apache.maven:maven-parent:37
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:37
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:27
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-shade-plugin:maven-plugin:3.4.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache.maven.plugins:maven-install-plugin:3.1.1
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-install-plugin:maven-plugin:3.1.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.keevers:velocity-whitelist:2.0.0
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <directory default-value="${project.build.directory}" />
+  <excludeDefaultDirectories default-value="false">${maven.clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <fast default-value="false">${maven.clean.fast}</fast>
+  <fastDir>${maven.clean.fastDir}</fastDir>
+  <fastMode default-value="background">${maven.clean.fastMode}</fastMode>
+  <followSymLinks default-value="false">${maven.clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}" />
+  <reportDirectory default-value="${project.build.outputDirectory}" />
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <session default-value="${session}" />
+  <skip default-value="false">${maven.clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}" />
+  <verbose>${maven.clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <addDefaultExcludes default-value="true" />
+  <buildFilters default-value="${project.build.filters}" />
+  <encoding default-value="${project.build.sourceEncoding}" />
+  <escapeWindowsPaths default-value="true" />
+  <fileNameFiltering default-value="false" />
+  <includeEmptyDirs default-value="false" />
+  <outputDirectory default-value="${project.build.outputDirectory}" />
+  <overwrite default-value="false" />
+  <project default-value="${project}" />
+  <resources default-value="${project.resources}" />
+  <session default-value="${session}" />
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false" />
+  <useBuildFilters default-value="true" />
+  <useDefaultDelimiters default-value="true" />
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <basedir default-value="${basedir}" />
+  <buildDirectory default-value="${project.build.directory}" />
+  <compilePath default-value="${project.compileClasspathElements}" />
+  <compileSourceRoots default-value="${project.compileSourceRoots}" />
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac" />
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations" />
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}" />
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}" />
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <project default-value="${project}" />
+  <projectArtifact default-value="${project.artifact}" />
+  <release>22</release>
+  <session default-value="${session}" />
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">22</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">22</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <addDefaultExcludes default-value="true" />
+  <buildFilters default-value="${project.build.filters}" />
+  <encoding default-value="${project.build.sourceEncoding}" />
+  <escapeWindowsPaths default-value="true" />
+  <fileNameFiltering default-value="false" />
+  <includeEmptyDirs default-value="false" />
+  <outputDirectory default-value="${project.build.testOutputDirectory}" />
+  <overwrite default-value="false" />
+  <project default-value="${project}" />
+  <resources default-value="${project.testResources}" />
+  <session default-value="${session}" />
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false" />
+  <useBuildFilters default-value="true" />
+  <useDefaultDelimiters default-value="true" />
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <basedir default-value="${basedir}" />
+  <buildDirectory default-value="${project.build.directory}" />
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}" />
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test" />
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations" />
+  <implicit>${maven.compiler.implicit}</implicit>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}" />
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}" />
+  <parameters default-value="false">${maven.compiler.parameters}</parameters>
+  <project default-value="${project}" />
+  <release>22</release>
+  <session default-value="${session}" />
+  <showCompilationChanges default-value="false">${maven.compiler.showCompilationChanges}</showCompilationChanges>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="true">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.8">22</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.8">22</target>
+  <testPath default-value="${project.testClasspathElements}" />
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <useModulePath default-value="true" />
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <additionalClasspathDependencies>${maven.test.additionalClasspathDependencies}</additionalClasspathDependencies>
+  <additionalClasspathElements>${maven.test.additionalClasspath}</additionalClasspathElements>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}" />
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}" />
+  <classpathDependencyExcludes>${maven.test.dependency.excludes}</classpathDependencyExcludes>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <dependenciesToScan>${dependenciesToScan}</dependenciesToScan>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <enableProcessChecker>${surefire.enableProcessChecker}</enableProcessChecker>
+  <encoding default-value="${project.reporting.outputEncoding}">${surefire.encoding}</encoding>
+  <excludeJUnit5Engines>${surefire.excludeJUnit5Engines}</excludeJUnit5Engines>
+  <excludedEnvironmentVariables>${surefire.excludedEnvironmentVariables}</excludedEnvironmentVariables>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <excludes>${surefire.excludes}</excludes>
+  <excludesFile>${surefire.excludesFile}</excludesFile>
+  <failIfNoSpecifiedTests default-value="true">${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests default-value="false">${failIfNoTests}</failIfNoTests>
+  <failOnFlakeCount default-value="0">${surefire.failOnFlakeCount}</failOnFlakeCount>
+  <forkCount default-value="1">${forkCount}</forkCount>
+  <forkNode>${surefire.forkNode}</forkNode>
+  <forkedProcessExitTimeoutInSeconds default-value="30">${surefire.exitTimeout}</forkedProcessExitTimeoutInSeconds>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <includeJUnit5Engines>${surefire.includeJUnit5Engines}</includeJUnit5Engines>
+  <includes>${surefire.includes}</includes>
+  <includesFile>${surefire.includesFile}</includesFile>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}" />
+  <parallelOptimized default-value="true">${parallelOptimized}</parallelOptimized>
+  <parallelTestsTimeoutForcedInSeconds>${surefire.parallel.forcedTimeout}</parallelTestsTimeoutForcedInSeconds>
+  <parallelTestsTimeoutInSeconds>${surefire.parallel.timeout}</parallelTestsTimeoutInSeconds>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}" />
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <project default-value="${project}" />
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <projectBuildDirectory default-value="${project.build.directory}" />
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports" />
+  <rerunFailingTestsCount default-value="0">${surefire.rerunFailingTestsCount}</rerunFailingTestsCount>
+  <reuseForks default-value="true">${reuseForks}</reuseForks>
+  <runOrder default-value="filesystem">${surefire.runOrder}</runOrder>
+  <runOrderRandomSeed>${surefire.runOrder.random.seed}</runOrderRandomSeed>
+  <session default-value="${session}" />
+  <shutdown default-value="exit">${surefire.shutdown}</shutdown>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipAfterFailureCount default-value="0">${surefire.skipAfterFailureCount}</skipAfterFailureCount>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <suiteXmlFiles>${surefire.suiteXmlFiles}</suiteXmlFiles>
+  <systemPropertiesFile>${surefire.systemPropertiesFile}</systemPropertiesFile>
+  <tempDir default-value="surefire">${tempDir}</tempDir>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}" />
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}" />
+  <threadCount>${threadCount}</threadCount>
+  <threadCountClasses default-value="0">${threadCountClasses}</threadCountClasses>
+  <threadCountMethods default-value="0">${threadCountMethods}</threadCountMethods>
+  <threadCountSuites default-value="0">${threadCountSuites}</threadCountSuites>
+  <trimStackTrace default-value="false">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useModulePath default-value="true">${surefire.useModulePath}</useModulePath>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:3.4.1:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <addDefaultExcludes default-value="true" />
+  <classesDirectory default-value="${project.build.outputDirectory}" />
+  <detectMultiReleaseJar default-value="true">${maven.jar.detectMultiReleaseJar}</detectMultiReleaseJar>
+  <finalName default-value="${project.build.finalName}" />
+  <forceCreation default-value="false">${maven.jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}" />
+  <outputTimestamp default-value="${project.build.outputTimestamp}" />
+  <project default-value="${project}" />
+  <session default-value="${session}" />
+  <skipIfEmpty default-value="false" />
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-shade-plugin:3.4.1:shade (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <createDependencyReducedPom default-value="true">true</createDependencyReducedPom>
+  <dependencyReducedPomLocation default-value="${basedir}/dependency-reduced-pom.xml" />
+  <generateUniqueDependencyReducedPom default-value="false" />
+  <localRepository default-value="${localRepository}" />
+  <minimizeJar>true</minimizeJar>
+  <outputDirectory default-value="${project.build.directory}" />
+  <project default-value="${project}" />
+  <relocations>
+    <relocation>
+      <pattern>net.dv8tion.jda</pattern>
+      <shadedPattern>com.keevers.shaded.jda</shadedPattern>
+    </relocation>
+  </relocations>
+  <remoteArtifactRepositories default-value="${project.remoteArtifactRepositories}" />
+  <session default-value="${session}" />
+  <shadeSourcesContent default-value="false">${shadeSourcesContent}</shadeSourcesContent>
+  <shadeTestJar default-value="false" />
+  <shadedArtifactId default-value="${project.artifactId}" />
+  <shadedClassifierName default-value="shaded" />
+  <skip default-value="false" />
+  <useBaseVersion default-value="false" />
+  <useDependencyReducedPomInJar default-value="false" />
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:3.1.1:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <configuration>
+  <allowIncompleteProjects default-value="false">${allowIncompleteProjects}</allowIncompleteProjects>
+  <installAtEnd default-value="false">${installAtEnd}</installAtEnd>
+  <pluginDescriptor default-value="${plugin}" />
+  <project default-value="${project}" />
+  <reactorProjects default-value="${reactorProjects}" />
+  <session default-value="${session}" />
+  <skip default-value="false">${maven.install.skip}</skip>
+</configuration>
+[DEBUG] =======================================================================
+[WARNING] Version not locked for default bindings plugins [maven-resources-plugin, maven-surefire-plugin, maven-jar-plugin, maven-install-plugin], you should define versions in pluginManagement section of your pom.xml or parent
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from net.dv8tion:JDA:5.0.0-alpha.14
+[DEBUG] Reading file model from net.luckperms:api:5.4
+[DEBUG] Reading file model from com.velocitypowered:velocity-api:3.1.0
+[DEBUG] Reading file model from org.mariadb.jdbc:mariadb-java-client:3.0.4
+[DEBUG] Reading file model from org.yaml:snakeyaml:1.32
+[DEBUG] Reading file model from net.kyori:adventure-bom:4.9.3
+[DEBUG] Reading file model from org.junit:junit-bom:5.8.2
+[DEBUG] Reading file model from org.slf4j:slf4j-simple:2.0.7
+[DEBUG] Reading file model from org.slf4j:slf4j-api:2.0.7
+[DEBUG] Reading file model from org.slf4j:slf4j-parent:2.0.7
+[DEBUG] Reading file model from software.amazon.awssdk:bom:2.17.24
+[DEBUG] Reading file model from com.google.code.gson:gson:2.8.8
+[DEBUG] Reading file model from com.google.guava:guava:25.1-jre
+[DEBUG] Reading file model from com.google.code.gson:gson-parent:2.8.8
+[DEBUG] Reading file model from org.sonatype.oss:oss-parent:7
+[DEBUG] Reading file model from com.google.guava:guava-parent:25.1-jre
+[DEBUG] Reading file model from com.moandjiezana.toml:toml4j:0.7.2
+[DEBUG] Replacing repositories from com.google.code.gson:gson:jar:2.8.8
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from net.kyori:adventure-api:4.9.3
+[DEBUG] Reading file model from software.amazon.awssdk:aws-sdk-java-pom:2.17.24
+[DEBUG] Reading file model from net.kyori:adventure-text-serializer-gson:4.9.3
+[DEBUG] Reading file model from org.sonatype.oss:oss-parent:9
+[DEBUG] Reading file model from net.kyori:adventure-text-serializer-legacy:4.9.3
+[DEBUG] Reading file model from net.kyori:adventure-text-serializer-plain:4.9.3
+[DEBUG] Replacing repositories from com.google.guava:guava:bundle:25.1-jre
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.slf4j:slf4j-api:1.7.30
+[DEBUG] Reading file model from com.google.inject:guice:5.0.1
+[DEBUG] Reading file model from org.slf4j:slf4j-parent:1.7.30
+[DEBUG] Reading file model from org.checkerframework:checker-qual:3.6.1
+[DEBUG] Reading file model from com.google.inject:guice-parent:5.0.1
+[DEBUG] Reading file model from org.spongepowered:configurate-hocon:3.7.2
+[DEBUG] Could not find metadata com.velocitypowered:velocity-brigadier:1.0.0-SNAPSHOT/maven-metadata.xml in local (C:\Users\User\.m2\repository)
+[DEBUG] Reading file model from com.google:google:5
+[DEBUG] Reading file model from org.spongepowered:configurate-yaml:3.7.2
+[DEBUG] Reading file model from org.spongepowered:configurate-gson:3.7.2
+[DEBUG] Reading file model from com.google.code.findbugs:jsr305:3.0.2
+[DEBUG] Could not find metadata com.velocitypowered:velocity-brigadier:1.0.0-SNAPSHOT/maven-metadata.xml in local (C:\Users\User\.m2\repository)
+[DEBUG] Reading file model from org.jetbrains:annotations:23.0.0
+[DEBUG] Reading file model from org.slf4j:slf4j-api:1.7.36
+[DEBUG] Replacing repositories from com.google.code.findbugs:jsr305:jar:3.0.2
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from com.neovisionaries:nv-websocket-client:2.14
+[DEBUG] Reading file model from com.squareup.okhttp3:okhttp:4.9.3
+[DEBUG] Reading file model from club.minnced:opus-java:1.1.1
+[DEBUG] Reading file model from org.slf4j:slf4j-parent:1.7.36
+[DEBUG] Reading file model from net.sf.trove4j:trove4j:3.0.3
+[DEBUG] Reading file model from com.fasterxml.jackson.core:jackson-core:2.13.2
+[DEBUG] Reading file model from org.apache.commons:commons-collections4:4.4
+[DEBUG] Merging repositories from com.fasterxml.jackson.core:jackson-core:bundle:2.13.2
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+central (https://repo.maven.apache.org/maven2, default, releases)
+sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from com.fasterxml.jackson.core:jackson-databind:2.13.2.2
+[DEBUG] Reading file model from org.checkerframework:checker-qual:2.0.0
+[DEBUG] Reading file model from com.fasterxml.jackson:jackson-base:2.13.2
+[DEBUG] Merging repositories from com.fasterxml.jackson.core:jackson-databind:bundle:2.13.2.2
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+central (https://repo.maven.apache.org/maven2, default, releases)
+sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache.commons:commons-parent:48
+[DEBUG] Reading file model from com.google.errorprone:error_prone_annotations:2.1.3
+[DEBUG] Reading file model from com.fasterxml.jackson:jackson-bom:2.13.2
+[DEBUG] Merging repositories from [inherited]:jackson-bom:pom:2.13.2
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+central (https://repo.maven.apache.org/maven2, default, releases)
+sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from com.google.errorprone:error_prone_parent:2.1.3
+[DEBUG] Reading file model from com.fasterxml.jackson:jackson-parent:2.13
+[DEBUG] Merging repositories from com.fasterxml.jackson:jackson-parent:pom:2.13
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+central (https://repo.maven.apache.org/maven2, default, releases)
+sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from com.fasterxml:oss-parent:43
+[DEBUG] Reading file model from org.apache:apache:21
+[DEBUG] Reading file model from com.google.j2objc:j2objc-annotations:1.1
+[DEBUG] Reading file model from org.codehaus.mojo:animal-sniffer-annotations:1.14
+[DEBUG] Reading file model from org.codehaus.mojo:animal-sniffer-parent:1.14
+[DEBUG] Reading file model from org.codehaus.mojo:mojo-parent:34
+[DEBUG] Reading file model from org.codehaus:codehaus-parent:4
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus-snapshots (http://nexus.codehaus.org/snapshots/).
+[DEBUG] Replacing repositories from org.codehaus.mojo:animal-sniffer-annotations:jar:1.14
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from com.google.code.gson:gson:2.8.1
+[DEBUG] Reading file model from com.google.code.gson:gson-parent:2.8.1
+[DEBUG] Replacing repositories from org.apache.commons:commons-collections4:jar:4.4
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from net.kyori:adventure-key:4.9.3
+[DEBUG] Reading file model from net.kyori:examination-api:1.3.0
+[DEBUG] Replacing repositories from com.google.code.gson:gson:jar:2.8.1
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from net.kyori:examination-string:1.3.0
+[DEBUG] Reading file model from org.jetbrains:annotations:22.0.0
+[DEBUG] Reading file model from com.google.code.gson:gson:2.8.0
+[DEBUG] Reading file model from javax.inject:javax.inject:1
+[DEBUG] Reading file model from aopalliance:aopalliance:1.0
+[DEBUG] Reading file model from com.google.code.gson:gson-parent:2.8.0
+[DEBUG] Reading file model from com.google.guava:guava:30.1-jre
+[DEBUG] Replacing repositories from com.google.code.gson:gson:jar:2.8.0
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from com.google.guava:guava-parent:30.1-jre
+[DEBUG] Using transporter JdkTransporter with priority 10.0 for https://repo.velocitypowered.com/snapshots/
+[DEBUG] Using connector BasicRepositoryConnector with priority 0.0 for https://repo.velocitypowered.com/snapshots/
+[INFO] Downloading from velocitypowered: https://repo.velocitypowered.com/snapshots/com/velocitypowered/velocity-brigadier/1.0.0-SNAPSHOT/maven-metadata.xml
+[INFO] Downloaded from velocitypowered: https://repo.velocitypowered.com/snapshots/com/velocitypowered/velocity-brigadier/1.0.0-SNAPSHOT/maven-metadata.xml (1.2 kB at 335 B/s)
+[DEBUG] Writing tracking file 'C:\Users\User\.m2\repository\com\velocitypowered\velocity-brigadier\1.0.0-SNAPSHOT\resolver-status.properties'
+[DEBUG] Could not find metadata com.velocitypowered:velocity-brigadier:1.0.0-SNAPSHOT/maven-metadata.xml in local (C:\Users\User\.m2\repository)
+[DEBUG] Skipped remote request for com.velocitypowered:velocity-brigadier:1.0.0-SNAPSHOT/maven-metadata.xml, already updated during this session
+[DEBUG] Reading file model from com.velocitypowered:velocity-brigadier:1.0.0-20230303.213659-2
+[DEBUG] Reading file model from com.typesafe:config:1.4.0
+[DEBUG] Reading file model from org.spongepowered:configurate-core:3.7.2
+[DEBUG] Reading file model from org.jetbrains.kotlin:kotlin-stdlib:1.4.10
+[DEBUG] Reading file model from org.yaml:snakeyaml:1.26
+[DEBUG] Reading file model from com.squareup.okio:okio:2.8.0
+[DEBUG] Reading file model from club.minnced:opus-java-api:1.1.1
+[DEBUG] Reading file model from com.google.guava:guava:21.0
+[DEBUG] Reading file model from club.minnced:opus-java-natives:1.1.1
+[DEBUG] Reading file model from com.fasterxml.jackson.core:jackson-annotations:2.13.2
+[DEBUG] Merging repositories from com.fasterxml.jackson.core:jackson-annotations:bundle:2.13.2
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+central (https://repo.maven.apache.org/maven2, default, releases)
+sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.checkerframework:checker-qual:2.4.0
+[DEBUG] Reading file model from org.jetbrains.kotlin:kotlin-stdlib:1.4.0
+[DEBUG] Reading file model from com.google.inject:guice:4.2.3
+[DEBUG] Reading file model from com.google.guava:guava-parent:21.0
+[DEBUG] Reading file model from org.jetbrains.kotlin:kotlin-stdlib-common:1.4.0
+[DEBUG] Reading file model from com.google.inject:guice-parent:4.2.3
+[DEBUG] Reading file model from org.jetbrains.kotlin:kotlin-stdlib-common:1.4.10
+[DEBUG] Reading file model from org.jetbrains:annotations:13.0
+[DEBUG] Replacing repositories from com.google.guava:guava:bundle:21.0
+    velocitypowered (https://repo.velocitypowered.com/snapshots/, default, releases+snapshots)
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from net.java.dev.jna:jna:4.4.0
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=1020600, ConflictMarker.markTime=192300, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=493100, ConflictIdSorter.topsortTime=326700, ConflictIdSorter.conflictIdCount=46, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6417000, ConflictResolver.conflictItemCount=74, BfDependencyCollector.collectTime=3818412000, BfDependencyCollector.transformTime=11355800}
+[DEBUG] com.keevers:velocity-whitelist:jar:2.0.0
+[DEBUG] +- com.velocitypowered:velocity-api:jar:3.1.0 [provided]
+[DEBUG] |  +- com.google.code.gson:gson:jar:2.8.8 [provided]
+[DEBUG] |  +- com.google.guava:guava:jar:25.1-jre [provided]
+[DEBUG] |  |  +- com.google.errorprone:error_prone_annotations:jar:2.1.3 [provided]
+[DEBUG] |  |  +- com.google.j2objc:j2objc-annotations:jar:1.1 [provided]
+[DEBUG] |  |  \- org.codehaus.mojo:animal-sniffer-annotations:jar:1.14 [provided]
+[DEBUG] |  +- com.moandjiezana.toml:toml4j:jar:0.7.2 [provided]
+[DEBUG] |  +- net.kyori:adventure-api:jar:4.9.3 [provided]
+[DEBUG] |  |  +- net.kyori:adventure-key:jar:4.9.3 [provided]
+[DEBUG] |  |  +- net.kyori:examination-api:jar:1.3.0 [provided]
+[DEBUG] |  |  \- net.kyori:examination-string:jar:1.3.0 [provided]
+[DEBUG] |  +- net.kyori:adventure-text-serializer-gson:jar:4.9.3 [provided]
+[DEBUG] |  +- net.kyori:adventure-text-serializer-legacy:jar:4.9.3 [provided]
+[DEBUG] |  +- net.kyori:adventure-text-serializer-plain:jar:4.9.3 [provided]
+[DEBUG] |  +- com.google.inject:guice:jar:5.0.1 [provided]
+[DEBUG] |  |  +- javax.inject:javax.inject:jar:1 [provided]
+[DEBUG] |  |  \- aopalliance:aopalliance:jar:1.0 [provided]
+[DEBUG] |  +- org.checkerframework:checker-qual:jar:3.6.1 [provided]
+[DEBUG] |  +- com.velocitypowered:velocity-brigadier:jar:1.0.0-SNAPSHOT [provided]
+[DEBUG] |  +- org.spongepowered:configurate-hocon:jar:3.7.2 [provided]
+[DEBUG] |  |  +- org.spongepowered:configurate-core:jar:3.7.2 [provided]
+[DEBUG] |  |  \- com.typesafe:config:jar:1.4.0 [provided]
+[DEBUG] |  +- org.spongepowered:configurate-yaml:jar:3.7.2 [provided]
+[DEBUG] |  \- org.spongepowered:configurate-gson:jar:3.7.2 [provided]
+[DEBUG] +- net.luckperms:api:jar:5.4 [compile]
+[DEBUG] +- org.mariadb.jdbc:mariadb-java-client:jar:3.0.4 [compile]
+[DEBUG] +- net.dv8tion:JDA:jar:5.0.0-alpha.14 [compile]
+[DEBUG] |  +- com.google.code.findbugs:jsr305:jar:3.0.2 [compile]
+[DEBUG] |  +- org.jetbrains:annotations:jar:23.0.0 [compile]
+[DEBUG] |  +- com.neovisionaries:nv-websocket-client:jar:2.14 [compile]
+[DEBUG] |  +- com.squareup.okhttp3:okhttp:jar:4.9.3 [compile]
+[DEBUG] |  |  +- com.squareup.okio:okio:jar:2.8.0 [compile]
+[DEBUG] |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.4.0 [compile]
+[DEBUG] |  |  \- org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.10 [compile]
+[DEBUG] |  +- club.minnced:opus-java:jar:1.1.1 [compile]
+[DEBUG] |  |  +- club.minnced:opus-java-api:jar:1.1.1 [compile]
+[DEBUG] |  |  |  \- net.java.dev.jna:jna:jar:4.4.0 [runtime]
+[DEBUG] |  |  \- club.minnced:opus-java-natives:jar:1.1.1 [compile]
+[DEBUG] |  +- org.apache.commons:commons-collections4:jar:4.4 [compile]
+[DEBUG] |  +- net.sf.trove4j:trove4j:jar:3.0.3 [runtime]
+[DEBUG] |  +- com.fasterxml.jackson.core:jackson-core:jar:2.13.2 [runtime]
+[DEBUG] |  \- com.fasterxml.jackson.core:jackson-databind:jar:2.13.2.2 [runtime]
+[DEBUG] |     \- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.2 [runtime]
+[DEBUG] +- org.yaml:snakeyaml:jar:1.32 [compile]
+[DEBUG] +- org.slf4j:slf4j-api:jar:2.0.7 [compile]
+[DEBUG] \- org.slf4j:slf4j-simple:jar:2.0.7 [compile]
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ velocity-whitelist ---
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-clean-plugin:maven-plugin:3.2.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-utils:3.3.4
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:34
+[DEBUG] Reading file model from org.apache.maven:maven-parent:34
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:34
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:23
+[DEBUG] Reading file model from commons-io:commons-io:2.6
+[DEBUG] Reading file model from org.apache.commons:commons-parent:42
+[DEBUG] Reading file model from org.apache:apache:18
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=26400, ConflictMarker.markTime=51100, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=6500, ConflictIdSorter.topsortTime=7500, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=222200, ConflictResolver.conflictItemCount=3, BfDependencyCollector.collectTime=35723400, BfDependencyCollector.transformTime=329900}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0
+[DEBUG] \- org.apache.maven.shared:maven-shared-utils:jar:3.3.4 [compile]
+[DEBUG]    \- commons-io:commons-io:jar:2.6 [compile]
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:3.2.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:3.2.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean:default-clean' with basic configurator -->
+[DEBUG]   (f) directory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) fast = false
+[DEBUG]   (f) fastMode = background
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]   (f) reportDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\velocity-whitelist-2.0.0.jar
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-status\maven-compiler-plugin\compile\default-compile
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-status\maven-compiler-plugin\compile
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-status\maven-compiler-plugin
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-status
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-archiver\pom.properties
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\maven-archiver
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\consumer-6737129873487020608.pom
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\velocity-plugin.json
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\me\tini\discordrewards\CodeGenerator.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\me\tini\discordrewards
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\me\tini
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\me
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\tini\discordrewards\RewardsElf.class
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\tini\discordrewards\DiscordJoinListener.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\tini\discordrewards
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\tini
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitywhitelist\VelocityWhitelist.class
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitywhitelist\VelocityListener.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitywhitelist
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitymariadb\VelocityMariaDB.class
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitymariadb\VelocityMariaDB$Reward.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitymariadb
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitydiscordbot\VelocityDiscordBot.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitydiscordbot
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitydiscord\VelocityDiscordBot.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\velocitydiscord
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\logging\CustomLogger.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\logging
+[INFO] Deleting file D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\chumpcode\ChumpCodeChecker.class
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers\chumpcode
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com\keevers
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes\com
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[INFO] Deleting directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG] Skipping non-existing directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG] Skipping non-existing directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes
+[DEBUG] Skipping non-existing directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ velocity-whitelist ---
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-resources-plugin:maven-plugin:3.3.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-interpolation:1.26
+[DEBUG] Reading file model from org.apache.maven.shared:maven-filtering:3.3.1
+[DEBUG] Reading file model from commons-io:commons-io:2.11.0
+[DEBUG] Reading file model from org.apache.commons:commons-lang3:3.12.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-utils:3.5.1
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:39
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:10
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:5.1
+[DEBUG] Reading file model from org.apache.commons:commons-parent:52
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-utils:3.5.0
+[DEBUG] Reading file model from org.sonatype.plexus:plexus-build-api:0.0.7
+[DEBUG] Reading file model from org.sonatype.spice:spice-parent:15
+[DEBUG] Reading file model from org.sonatype.forge:forge-parent:5
+[DEBUG] Reading file model from org.junit:junit-bom:5.7.1
+[DEBUG] Reading file model from org.junit:junit-bom:5.7.2
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=41600, ConflictMarker.markTime=44900, ConflictMarker.nodeCount=13, ConflictIdSorter.graphTime=19600, ConflictIdSorter.topsortTime=10400, ConflictIdSorter.conflictIdCount=9, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=225500, ConflictResolver.conflictItemCount=13, BfDependencyCollector.collectTime=25408100, BfDependencyCollector.transformTime=357100}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG] +- org.codehaus.plexus:plexus-interpolation:jar:1.26 [runtime]
+[DEBUG] +- org.codehaus.plexus:plexus-utils:jar:3.5.1 [compile]
+[DEBUG] +- org.apache.maven.shared:maven-filtering:jar:3.3.1 [compile]
+[DEBUG] |  +- javax.inject:javax.inject:jar:1 [compile]
+[DEBUG] |  +- org.slf4j:slf4j-api:jar:1.7.36 [compile]
+[DEBUG] |  \- org.sonatype.plexus:plexus-build-api:jar:0.0.7 [compile]
+[DEBUG] +- commons-io:commons-io:jar:2.11.0 [compile]
+[DEBUG] \- org.apache.commons:commons-lang3:jar:3.12.0 [compile]
+[DEBUG]   Excluded: javax.inject:javax.inject:jar:1
+[DEBUG]   Excluded: org.slf4j:slf4j-api:jar:1.7.36
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.3.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.11.0
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.12.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:resources:default-resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\resources, PatternSet [includes: {}, excludes: {}]}}, Resource {targetPath: null, filtering: true, FileSet {directory: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\resources-filtered, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] classworlds.conf: C:\Program Files\Apache\Maven\bin\m2.conf
+[DEBUG] env.=D:: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.ACSETUPSVCPORT: 23210
+[DEBUG] env.ACSVCPORT: 17532
+[DEBUG] env.ADB: C:\Users\User\Downloads\platform-tools\platform-tools
+[DEBUG] env.ALLUSERSPROFILE: C:\ProgramData
+[DEBUG] env.AMDRMPATH: C:\Program Files\AMD\RyzenMaster\
+[DEBUG] env.APPDATA: C:\Users\User\AppData\Roaming
+[DEBUG] env.CHOCOLATEYINSTALL: C:\ProgramData\chocolatey
+[DEBUG] env.CHOCOLATEYLASTPATHUPDATE: 133737551314025149
+[DEBUG] env.CLASSWORLDS_CONF: C:\Program Files\Apache\Maven\bin\m2.conf
+[DEBUG] env.COMMONPROGRAMFILES: C:\Program Files\Common Files
+[DEBUG] env.COMMONPROGRAMFILES(X86): C:\Program Files (x86)\Common Files
+[DEBUG] env.COMMONPROGRAMW6432: C:\Program Files\Common Files
+[DEBUG] env.COMPUTERNAME: JK-WS-01
+[DEBUG] env.COMSPEC: C:\WINDOWS\system32\cmd.exe
+[DEBUG] env.DRIVERDATA: C:\Windows\System32\Drivers\DriverData
+[DEBUG] env.ERROR_CODE: 0
+[DEBUG] env.EXEC_DIR: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.HOMEDRIVE: C:
+[DEBUG] env.HOMEPATH: \Users\User
+[DEBUG] env.IRIDIUMIO: C:\Users\User\AppData\Local\IridiumIO
+[DEBUG] env.JAVACMD: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin\java.exe
+[DEBUG] env.LAUNCHER_CLASS: org.codehaus.plexus.classworlds.launcher.Launcher
+[DEBUG] env.LAUNCHER_JAR: "C:\Program Files\Apache\Maven\boot\plexus-classworlds-2.8.0.jar"
+[DEBUG] env.LOCALAPPDATA: C:\Users\User\AppData\Local
+[DEBUG] env.LOGONSERVER: \\JK-WS-01
+[DEBUG] env.MAVEN_DEBUG_ADDRESS: localhost:8000
+[DEBUG] env.MAVEN_HOME: C:\Program Files\Apache\Maven
+[DEBUG] env.MAVEN_MAIN_CLASS: org.apache.maven.cling.MavenCling
+[DEBUG] env.MAVEN_PROJECTBASEDIR: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.MOZ_PLUGIN_PATH: C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\plugins\
+[DEBUG] env.NUMBER_OF_PROCESSORS: 12
+[DEBUG] env.ONEDRIVE: D:\Users\OneDrive\OneDrive - keevers.com.au
+[DEBUG] env.OS: Windows_NT
+[DEBUG] env.PATH: C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files\Calibre2\;C:\Program Files (x86)\Heavyocity\Heavyocity Portal;C:\Program Files\PowerShell\7\;C:\Program Files\Ceph\bin\;c:\Program Files\Acustica\Framework\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PuTTY\;C:\Program Files\WorldPainter;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\CubeCoders Limited\AMP\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\platform-tools;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Nmap;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Users\User\AppData\Local\Programs\Ollama
+[DEBUG] env.PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
+[DEBUG] env.POWERSHELL_DISTRIBUTION_CHANNEL: MSI:Windows 10 Pro
+[DEBUG] env.PROCESSOR_ARCHITECTURE: AMD64
+[DEBUG] env.PROCESSOR_IDENTIFIER: AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+[DEBUG] env.PROCESSOR_LEVEL: 23
+[DEBUG] env.PROCESSOR_REVISION: 7100
+[DEBUG] env.PROGRAMDATA: C:\ProgramData
+[DEBUG] env.PROGRAMFILES: C:\Program Files
+[DEBUG] env.PROGRAMFILES(X86): C:\Program Files (x86)
+[DEBUG] env.PROGRAMW6432: C:\Program Files
+[DEBUG] env.PROMPT: $P$G
+[DEBUG] env.PSMODULEPATH: D:\Users\Documents\WindowsPowerShell\Modules;C:\Program Files (x86)\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+[DEBUG] env.PUBLIC: C:\Users\Public
+[DEBUG] env.RLSSVCPORT: 22112
+[DEBUG] env.SESSIONNAME: Console
+[DEBUG] env.SYSTEMDRIVE: C:
+[DEBUG] env.SYSTEMROOT: C:\WINDOWS
+[DEBUG] env.TEMP: C:\Users\User\AppData\Local\Temp
+[DEBUG] env.TMP: C:\Users\User\AppData\Local\Temp
+[DEBUG] env.USERDOMAIN: JK-WS-01
+[DEBUG] env.USERDOMAIN_ROAMINGPROFILE: JK-WS-01
+[DEBUG] env.USERNAME: User
+[DEBUG] env.USERPROFILE: C:\Users\User
+[DEBUG] env.VBOX_MSI_INSTALL_PATH: C:\Program Files\Oracle\VirtualBox\
+[DEBUG] env.WDIR: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.WINDIR: C:\WINDOWS
+[DEBUG] env.WSLENV: WT_SESSION:WT_PROFILE_ID:
+[DEBUG] env.WT_PROFILE_ID: {61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+[DEBUG] env.WT_SESSION: 14375854-1aed-4aca-9a02-ee2edfdaafff
+[DEBUG] env.__PSLOCKDOWNPOLICY: 0
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: \
+[DEBUG] java.class.path: C:\Program Files\Apache\Maven\boot\plexus-classworlds-2.8.0.jar
+[DEBUG] java.class.version: 66.0
+[DEBUG] java.home: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot
+[DEBUG] java.io.tmpdir: C:\Users\User\AppData\Local\Temp\
+[DEBUG] java.library.path: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files\Calibre2\;C:\Program Files (x86)\Heavyocity\Heavyocity Portal;C:\Program Files\PowerShell\7\;C:\Program Files\Ceph\bin\;c:\Program Files\Acustica\Framework\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PuTTY\;C:\Program Files\WorldPainter;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\CubeCoders Limited\AMP\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\platform-tools;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Nmap;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Users\User\AppData\Local\Programs\Ollama;.
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 22.0.1+8
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 22
+[DEBUG] java.vendor: Eclipse Adoptium
+[DEBUG] java.vendor.url: https://adoptium.net/
+[DEBUG] java.vendor.url.bug: https://github.com/adoptium/adoptium-support/issues
+[DEBUG] java.vendor.version: Temurin-22.0.1+8
+[DEBUG] java.version: 22.0.1
+[DEBUG] java.version.date: 2024-04-16
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 22
+[DEBUG] java.vm.vendor: Eclipse Adoptium
+[DEBUG] java.vm.version: 22.0.1+8
+[DEBUG] jdk.debug: release
+[DEBUG] library.jansi.path: C:\Program Files\Apache\Maven\lib\jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] maven.build.timestamp: 2025-01-06T11:55:58Z
+[DEBUG] maven.build.version: Apache Maven 4.0.0-beta-5 (6e78fcf6f5e76422c0eb358cd11f0c231ecafbad)
+[DEBUG] maven.compiler.release: 22
+[DEBUG] maven.compiler.source: 22
+[DEBUG] maven.compiler.target: 22
+[DEBUG] maven.conf: C:\Program Files\Apache\Maven/conf
+[DEBUG] maven.home: C:\Program Files\Apache\Maven
+[DEBUG] maven.installation.conf: C:\Program Files\Apache\Maven/conf
+[DEBUG] maven.installation.extensions: C:\Program Files\Apache\Maven/conf/extensions.xml
+[DEBUG] maven.installation.settings: C:\Program Files\Apache\Maven/conf/settings.xml
+[DEBUG] maven.installation.toolchains: C:\Program Files\Apache\Maven/conf/toolchains.xml
+[DEBUG] maven.mainClass: org.apache.maven.cling.MavenCling
+[DEBUG] maven.multiModuleProjectDirectory: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] maven.project.conf: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot/.mvn
+[DEBUG] maven.project.extensions: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot/.mvn/extensions.xml
+[DEBUG] maven.project.settings: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot/.mvn/settings.xml
+[DEBUG] maven.repo.central: https://repo.maven.apache.org/maven2
+[DEBUG] maven.user.conf: C:\Users\User/.m2
+[DEBUG] maven.user.extensions: C:\Users\User/.m2/extensions.xml
+[DEBUG] maven.user.settings: C:\Users\User/.m2/settings.xml
+[DEBUG] maven.user.toolchains: C:\Users\User/.m2/toolchains.xml
+[DEBUG] maven.version: 4.0.0-beta-5
+[DEBUG] native.encoding: Cp1252
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Windows 11
+[DEBUG] os.version: 10.0
+[DEBUG] path.separator: ;
+[DEBUG] project.baseUri: file:/D:/Users/Documents/GitHub/ohgodohnobot/ohgodohnonotavelocitydiscordbot/
+[DEBUG] project.build.outputTimestamp: 1980-02-01T00:00:00Z
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] stderr.encoding: cp437
+[DEBUG] stdout.encoding: cp437
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.cpu.isalist: amd64
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean install -U -Xlint
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: Cp1252
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] sun.os.patch.level: 
+[DEBUG] user.country: AU
+[DEBUG] user.dir: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] user.home: C:\Users\User
+[DEBUG] user.language: en
+[DEBUG] user.name: User
+[DEBUG] user.script: 
+[DEBUG] user.variant: 
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[DEBUG] resource with targetPath null
+directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\resources-filtered
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource from src\main\resources-filtered to target\classes
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ velocity-whitelist ---
+[DEBUG] Merging repositories from [inherited]:maven-compiler-plugin:maven-plugin:3.11.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:3.11.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-incremental:1.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-java:1.1.2
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-compiler-javac:2.13.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-compiler-api:2.13.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-compiler-manager:2.13.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-compilers:2.13.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-compiler:2.13.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-languages:1.1.2
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:19
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Merging repositories from org.apache.maven.shared:maven-shared-components:pom:19
+    central (https://repo.maven.apache.org/maven2, default, releases)
+plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-components:10.0
+[DEBUG] Reading file model from org.apache.maven:maven-parent:23
+[DEBUG] Merging repositories from [inherited]:plexus-components:pom:10.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:23
+    central (https://repo.maven.apache.org/maven2, default, releases)
+plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.apache:apache:13
+[DEBUG] Replacing repositories from org.codehaus.plexus:plexus-compiler-api:jar:2.13.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.codehaus.plexus:plexus-compiler-manager:jar:2.13.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.codehaus.plexus:plexus-compiler-javac:jar:2.13.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Reading file model from org.junit:junit-bom:5.9.1
+[DEBUG] Replacing repositories from org.apache.maven.shared:maven-shared-incremental:jar:1.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-component-annotations:1.5.5
+[DEBUG] Reading file model from org.ow2.asm:asm:9.4
+[DEBUG] Reading file model from com.thoughtworks.qdox:qdox:2.0.3
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-component-annotations:2.1.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-containers:1.5.5
+[DEBUG] Reading file model from org.ow2:ow2:1.5.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-containers:2.1.1
+[DEBUG] Replacing repositories from org.ow2.asm:asm:jar:9.4
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    ow2-snapshot (https://repository.ow2.org/nexus/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:2.0.7
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:6.5
+[DEBUG] Replacing repositories from com.thoughtworks.qdox:qdox:jar:2.0.3
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=72300, ConflictMarker.markTime=66400, ConflictMarker.nodeCount=17, ConflictIdSorter.graphTime=14600, ConflictIdSorter.topsortTime=11400, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=315800, ConflictResolver.conflictItemCount=17, BfDependencyCollector.collectTime=31366800, BfDependencyCollector.transformTime=498800}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.11.0
+[DEBUG] +- org.apache.maven.shared:maven-shared-utils:jar:3.3.4 [compile]
+[DEBUG] |  \- commons-io:commons-io:jar:2.6 [compile]
+[DEBUG] +- org.apache.maven.shared:maven-shared-incremental:jar:1.1 [compile]
+[DEBUG] |  \- org.codehaus.plexus:plexus-component-annotations:jar:1.5.5 [compile]
+[DEBUG] +- org.codehaus.plexus:plexus-java:jar:1.1.2 [compile]
+[DEBUG] |  +- org.ow2.asm:asm:jar:9.4 [compile]
+[DEBUG] |  \- com.thoughtworks.qdox:qdox:jar:2.0.3 [compile]
+[DEBUG] +- org.codehaus.plexus:plexus-compiler-api:jar:2.13.0 [compile]
+[DEBUG] |  \- org.codehaus.plexus:plexus-utils:jar:3.5.0 [compile]
+[DEBUG] +- org.codehaus.plexus:plexus-compiler-manager:jar:2.13.0 [compile]
+[DEBUG] \- org.codehaus.plexus:plexus-compiler-javac:jar:2.13.0 [runtime]
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.11.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.11.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.11.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.11.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.1.2
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.4
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.13.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.13.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.13.0
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.11.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile:default-compile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG]   (f) buildDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG]   (f) compilePath = [D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes, C:\Users\User\.m2\repository\com\velocitypowered\velocity-api\3.1.0\velocity-api-3.1.0.jar, C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar, C:\Users\User\.m2\repository\com\google\guava\guava\25.1-jre\guava-25.1-jre.jar, C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar, C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar, C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar, C:\Users\User\.m2\repository\com\moandjiezana\toml\toml4j\0.7.2\toml4j-0.7.2.jar, C:\Users\User\.m2\repository\net\kyori\adventure-api\4.9.3\adventure-api-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\adventure-key\4.9.3\adventure-key-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar, C:\Users\User\.m2\repository\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar, C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-gson\4.9.3\adventure-text-serializer-gson-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-legacy\4.9.3\adventure-text-serializer-legacy-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-plain\4.9.3\adventure-text-serializer-plain-4.9.3.jar, C:\Users\User\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar, C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar, C:\Users\User\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar, C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.6.1\checker-qual-3.6.1.jar, C:\Users\User\.m2\repository\com\velocitypowered\velocity-brigadier\1.0.0-SNAPSHOT\velocity-brigadier-1.0.0-SNAPSHOT.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-hocon\3.7.2\configurate-hocon-3.7.2.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-core\3.7.2\configurate-core-3.7.2.jar, C:\Users\User\.m2\repository\com\typesafe\config\1.4.0\config-1.4.0.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-yaml\3.7.2\configurate-yaml-3.7.2.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-gson\3.7.2\configurate-gson-3.7.2.jar, C:\Users\User\.m2\repository\net\luckperms\api\5.4\api-5.4.jar, C:\Users\User\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.0.4\mariadb-java-client-3.0.4.jar, C:\Users\User\.m2\repository\net\dv8tion\JDA\5.0.0-alpha.14\JDA-5.0.0-alpha.14.jar, C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar, C:\Users\User\.m2\repository\org\jetbrains\annotations\23.0.0\annotations-23.0.0.jar, C:\Users\User\.m2\repository\com\neovisionaries\nv-websocket-client\2.14\nv-websocket-client-2.14.jar, C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\4.9.3\okhttp-4.9.3.jar, C:\Users\User\.m2\repository\com\squareup\okio\okio\2.8.0\okio-2.8.0.jar, C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar, C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.10\kotlin-stdlib-1.4.10.jar, C:\Users\User\.m2\repository\club\minnced\opus-java\1.1.1\opus-java-1.1.1.jar, C:\Users\User\.m2\repository\club\minnced\opus-java-api\1.1.1\opus-java-api-1.1.1.jar, C:\Users\User\.m2\repository\club\minnced\opus-java-natives\1.1.1\opus-java-natives-1.1.1.jar, C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar, C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar, C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar, C:\Users\User\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar]
+[DEBUG]   (f) compileSourceRoots = [D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (f) projectArtifact = com.keevers:velocity-whitelist:jar:2.0.0
+[DEBUG]   (s) release = 22
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 22
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 22
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations to compile source roots:
+  D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java
+[DEBUG] New compile source roots:
+  D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java
+  D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\velocitywhitelist\VelocityWhitelist.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\velocitydiscordbot\VelocityDiscordBot.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\velocitywhitelist\VelocityListener.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\chumpcode\ChumpCodeChecker.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\tini\discordrewards\CodeGenerator.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\logging\CustomLogger.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\velocitymariadb\VelocityMariaDB.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\keevers\velocitydiscord\VelocityDiscordBot.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\tini\discordrewards\RewardsElf.java
+[DEBUG] Stale source detected: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java\com\tini\discordrewards\DiscordJoinListener.java
+[INFO] Changes detected - recompiling the module! :source
+[DEBUG] Classpath:
+[DEBUG]  D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]  C:\Users\User\.m2\repository\com\velocitypowered\velocity-api\3.1.0\velocity-api-3.1.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\google\guava\guava\25.1-jre\guava-25.1-jre.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\moandjiezana\toml\toml4j\0.7.2\toml4j-0.7.2.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\adventure-api\4.9.3\adventure-api-4.9.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\adventure-key\4.9.3\adventure-key-4.9.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-gson\4.9.3\adventure-text-serializer-gson-4.9.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-legacy\4.9.3\adventure-text-serializer-legacy-4.9.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-plain\4.9.3\adventure-text-serializer-plain-4.9.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar
+[DEBUG]  C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
+[DEBUG]  C:\Users\User\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.6.1\checker-qual-3.6.1.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\velocitypowered\velocity-brigadier\1.0.0-SNAPSHOT\velocity-brigadier-1.0.0-SNAPSHOT.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\spongepowered\configurate-hocon\3.7.2\configurate-hocon-3.7.2.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\spongepowered\configurate-core\3.7.2\configurate-core-3.7.2.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\typesafe\config\1.4.0\config-1.4.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\spongepowered\configurate-yaml\3.7.2\configurate-yaml-3.7.2.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\spongepowered\configurate-gson\3.7.2\configurate-gson-3.7.2.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\luckperms\api\5.4\api-5.4.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.0.4\mariadb-java-client-3.0.4.jar
+[DEBUG]  C:\Users\User\.m2\repository\net\dv8tion\JDA\5.0.0-alpha.14\JDA-5.0.0-alpha.14.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\jetbrains\annotations\23.0.0\annotations-23.0.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\neovisionaries\nv-websocket-client\2.14\nv-websocket-client-2.14.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\4.9.3\okhttp-4.9.3.jar
+[DEBUG]  C:\Users\User\.m2\repository\com\squareup\okio\okio\2.8.0\okio-2.8.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.10\kotlin-stdlib-1.4.10.jar
+[DEBUG]  C:\Users\User\.m2\repository\club\minnced\opus-java\1.1.1\opus-java-1.1.1.jar
+[DEBUG]  C:\Users\User\.m2\repository\club\minnced\opus-java-api\1.1.1\opus-java-api-1.1.1.jar
+[DEBUG]  C:\Users\User\.m2\repository\club\minnced\opus-java-natives\1.1.1\opus-java-natives-1.1.1.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar
+[DEBUG]  C:\Users\User\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar
+[DEBUG] Source roots:
+[DEBUG]  D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java
+[DEBUG]  D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations
+[DEBUG] Command line options:
+[DEBUG] -d D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes -classpath D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes;C:\Users\User\.m2\repository\com\velocitypowered\velocity-api\3.1.0\velocity-api-3.1.0.jar;C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar;C:\Users\User\.m2\repository\com\google\guava\guava\25.1-jre\guava-25.1-jre.jar;C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\User\.m2\repository\com\moandjiezana\toml\toml4j\0.7.2\toml4j-0.7.2.jar;C:\Users\User\.m2\repository\net\kyori\adventure-api\4.9.3\adventure-api-4.9.3.jar;C:\Users\User\.m2\repository\net\kyori\adventure-key\4.9.3\adventure-key-4.9.3.jar;C:\Users\User\.m2\repository\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar;C:\Users\User\.m2\repository\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar;C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-gson\4.9.3\adventure-text-serializer-gson-4.9.3.jar;C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-legacy\4.9.3\adventure-text-serializer-legacy-4.9.3.jar;C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-plain\4.9.3\adventure-text-serializer-plain-4.9.3.jar;C:\Users\User\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar;C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\User\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.6.1\checker-qual-3.6.1.jar;C:\Users\User\.m2\repository\com\velocitypowered\velocity-brigadier\1.0.0-SNAPSHOT\velocity-brigadier-1.0.0-SNAPSHOT.jar;C:\Users\User\.m2\repository\org\spongepowered\configurate-hocon\3.7.2\configurate-hocon-3.7.2.jar;C:\Users\User\.m2\repository\org\spongepowered\configurate-core\3.7.2\configurate-core-3.7.2.jar;C:\Users\User\.m2\repository\com\typesafe\config\1.4.0\config-1.4.0.jar;C:\Users\User\.m2\repository\org\spongepowered\configurate-yaml\3.7.2\configurate-yaml-3.7.2.jar;C:\Users\User\.m2\repository\org\spongepowered\configurate-gson\3.7.2\configurate-gson-3.7.2.jar;C:\Users\User\.m2\repository\net\luckperms\api\5.4\api-5.4.jar;C:\Users\User\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.0.4\mariadb-java-client-3.0.4.jar;C:\Users\User\.m2\repository\net\dv8tion\JDA\5.0.0-alpha.14\JDA-5.0.0-alpha.14.jar;C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\User\.m2\repository\org\jetbrains\annotations\23.0.0\annotations-23.0.0.jar;C:\Users\User\.m2\repository\com\neovisionaries\nv-websocket-client\2.14\nv-websocket-client-2.14.jar;C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\4.9.3\okhttp-4.9.3.jar;C:\Users\User\.m2\repository\com\squareup\okio\okio\2.8.0\okio-2.8.0.jar;C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar;C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.10\kotlin-stdlib-1.4.10.jar;C:\Users\User\.m2\repository\club\minnced\opus-java\1.1.1\opus-java-1.1.1.jar;C:\Users\User\.m2\repository\club\minnced\opus-java-api\1.1.1\opus-java-api-1.1.1.jar;C:\Users\User\.m2\repository\club\minnced\opus-java-natives\1.1.1\opus-java-natives-1.1.1.jar;C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\User\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar; -sourcepath D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\main\java;D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations; -s D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-sources\annotations -g --release 22 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 10 source files with javac [debug release 22] to target\classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] /D:/Users/Documents/GitHub/ohgodohnobot/ohgodohnonotavelocitydiscordbot/src/main/java/com/keevers/velocitywhitelist/VelocityWhitelist.java: Some input files use unchecked or unsafe operations.
+[INFO] /D:/Users/Documents/GitHub/ohgodohnobot/ohgodohnonotavelocitydiscordbot/src/main/java/com/keevers/velocitywhitelist/VelocityWhitelist.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ velocity-whitelist ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.3.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-resources-plugin:3.3.1:testResources:default-testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\test\resources, PatternSet [includes: {}, excludes: {}]}}, Resource {targetPath: null, filtering: true, FileSet {directory: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\test\resources-filtered, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used:
+[DEBUG] classworlds.conf: C:\Program Files\Apache\Maven\bin\m2.conf
+[DEBUG] env.=D:: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.ACSETUPSVCPORT: 23210
+[DEBUG] env.ACSVCPORT: 17532
+[DEBUG] env.ADB: C:\Users\User\Downloads\platform-tools\platform-tools
+[DEBUG] env.ALLUSERSPROFILE: C:\ProgramData
+[DEBUG] env.AMDRMPATH: C:\Program Files\AMD\RyzenMaster\
+[DEBUG] env.APPDATA: C:\Users\User\AppData\Roaming
+[DEBUG] env.CHOCOLATEYINSTALL: C:\ProgramData\chocolatey
+[DEBUG] env.CHOCOLATEYLASTPATHUPDATE: 133737551314025149
+[DEBUG] env.CLASSWORLDS_CONF: C:\Program Files\Apache\Maven\bin\m2.conf
+[DEBUG] env.COMMONPROGRAMFILES: C:\Program Files\Common Files
+[DEBUG] env.COMMONPROGRAMFILES(X86): C:\Program Files (x86)\Common Files
+[DEBUG] env.COMMONPROGRAMW6432: C:\Program Files\Common Files
+[DEBUG] env.COMPUTERNAME: JK-WS-01
+[DEBUG] env.COMSPEC: C:\WINDOWS\system32\cmd.exe
+[DEBUG] env.DRIVERDATA: C:\Windows\System32\Drivers\DriverData
+[DEBUG] env.ERROR_CODE: 0
+[DEBUG] env.EXEC_DIR: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.HOMEDRIVE: C:
+[DEBUG] env.HOMEPATH: \Users\User
+[DEBUG] env.IRIDIUMIO: C:\Users\User\AppData\Local\IridiumIO
+[DEBUG] env.JAVACMD: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin\java.exe
+[DEBUG] env.LAUNCHER_CLASS: org.codehaus.plexus.classworlds.launcher.Launcher
+[DEBUG] env.LAUNCHER_JAR: "C:\Program Files\Apache\Maven\boot\plexus-classworlds-2.8.0.jar"
+[DEBUG] env.LOCALAPPDATA: C:\Users\User\AppData\Local
+[DEBUG] env.LOGONSERVER: \\JK-WS-01
+[DEBUG] env.MAVEN_DEBUG_ADDRESS: localhost:8000
+[DEBUG] env.MAVEN_HOME: C:\Program Files\Apache\Maven
+[DEBUG] env.MAVEN_MAIN_CLASS: org.apache.maven.cling.MavenCling
+[DEBUG] env.MAVEN_PROJECTBASEDIR: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.MOZ_PLUGIN_PATH: C:\Program Files (x86)\Foxit Software\Foxit PDF Reader\plugins\
+[DEBUG] env.NUMBER_OF_PROCESSORS: 12
+[DEBUG] env.ONEDRIVE: D:\Users\OneDrive\OneDrive - keevers.com.au
+[DEBUG] env.OS: Windows_NT
+[DEBUG] env.PATH: C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files\Calibre2\;C:\Program Files (x86)\Heavyocity\Heavyocity Portal;C:\Program Files\PowerShell\7\;C:\Program Files\Ceph\bin\;c:\Program Files\Acustica\Framework\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PuTTY\;C:\Program Files\WorldPainter;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\CubeCoders Limited\AMP\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\platform-tools;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Nmap;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Users\User\AppData\Local\Programs\Ollama
+[DEBUG] env.PATHEXT: .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW;.CPL
+[DEBUG] env.POWERSHELL_DISTRIBUTION_CHANNEL: MSI:Windows 10 Pro
+[DEBUG] env.PROCESSOR_ARCHITECTURE: AMD64
+[DEBUG] env.PROCESSOR_IDENTIFIER: AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+[DEBUG] env.PROCESSOR_LEVEL: 23
+[DEBUG] env.PROCESSOR_REVISION: 7100
+[DEBUG] env.PROGRAMDATA: C:\ProgramData
+[DEBUG] env.PROGRAMFILES: C:\Program Files
+[DEBUG] env.PROGRAMFILES(X86): C:\Program Files (x86)
+[DEBUG] env.PROGRAMW6432: C:\Program Files
+[DEBUG] env.PROMPT: $P$G
+[DEBUG] env.PSMODULEPATH: D:\Users\Documents\WindowsPowerShell\Modules;C:\Program Files (x86)\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+[DEBUG] env.PUBLIC: C:\Users\Public
+[DEBUG] env.RLSSVCPORT: 22112
+[DEBUG] env.SESSIONNAME: Console
+[DEBUG] env.SYSTEMDRIVE: C:
+[DEBUG] env.SYSTEMROOT: C:\WINDOWS
+[DEBUG] env.TEMP: C:\Users\User\AppData\Local\Temp
+[DEBUG] env.TMP: C:\Users\User\AppData\Local\Temp
+[DEBUG] env.USERDOMAIN: JK-WS-01
+[DEBUG] env.USERDOMAIN_ROAMINGPROFILE: JK-WS-01
+[DEBUG] env.USERNAME: User
+[DEBUG] env.USERPROFILE: C:\Users\User
+[DEBUG] env.VBOX_MSI_INSTALL_PATH: C:\Program Files\Oracle\VirtualBox\
+[DEBUG] env.WDIR: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] env.WINDIR: C:\WINDOWS
+[DEBUG] env.WSLENV: WT_SESSION:WT_PROFILE_ID:
+[DEBUG] env.WT_PROFILE_ID: {61c54bbd-c2c6-5271-96e7-009a87ff44bf}
+[DEBUG] env.WT_SESSION: 14375854-1aed-4aca-9a02-ee2edfdaafff
+[DEBUG] env.__PSLOCKDOWNPOLICY: 0
+[DEBUG] file.encoding: UTF-8
+[DEBUG] file.separator: \
+[DEBUG] java.class.path: C:\Program Files\Apache\Maven\boot\plexus-classworlds-2.8.0.jar
+[DEBUG] java.class.version: 66.0
+[DEBUG] java.home: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot
+[DEBUG] java.io.tmpdir: C:\Users\User\AppData\Local\Temp\
+[DEBUG] java.library.path: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Python312\Scripts\;C:\Program Files\Python312\;C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-17.0.9.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-11.0.21.9-hotspot\bin;C:\Program Files\Eclipse Adoptium\jre-21.0.1.12-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\dotnet\;C:\Program Files\dotnet\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile\;C:\Program Files (x86)\Common Files\Acronis\VirtualFile64\;C:\Program Files (x86)\Common Files\Acronis\FileProtector\;C:\Program Files (x86)\Common Files\Acronis\FileProtector64\;C:\Program Files (x86)\Common Files\Acronis\SnapAPI\;C:\Program Files\Calibre2\;C:\Program Files (x86)\Heavyocity\Heavyocity Portal;C:\Program Files\PowerShell\7\;C:\Program Files\Ceph\bin\;c:\Program Files\Acustica\Framework\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\PuTTY\;C:\Program Files\WorldPainter;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\CubeCoders Limited\AMP\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\platform-tools;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Nmap;C:\Users\User\AppData\Local\GitHubDesktop\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\bin;C:\Program Files\Apache\Maven\bin;;C:\Users\User\AppData\Local\Programs\Ollama;.
+[DEBUG] java.runtime.name: OpenJDK Runtime Environment
+[DEBUG] java.runtime.version: 22.0.1+8
+[DEBUG] java.specification.name: Java Platform API Specification
+[DEBUG] java.specification.vendor: Oracle Corporation
+[DEBUG] java.specification.version: 22
+[DEBUG] java.vendor: Eclipse Adoptium
+[DEBUG] java.vendor.url: https://adoptium.net/
+[DEBUG] java.vendor.url.bug: https://github.com/adoptium/adoptium-support/issues
+[DEBUG] java.vendor.version: Temurin-22.0.1+8
+[DEBUG] java.version: 22.0.1
+[DEBUG] java.version.date: 2024-04-16
+[DEBUG] java.vm.compressedOopsMode: Zero based
+[DEBUG] java.vm.info: mixed mode, sharing
+[DEBUG] java.vm.name: OpenJDK 64-Bit Server VM
+[DEBUG] java.vm.specification.name: Java Virtual Machine Specification
+[DEBUG] java.vm.specification.vendor: Oracle Corporation
+[DEBUG] java.vm.specification.version: 22
+[DEBUG] java.vm.vendor: Eclipse Adoptium
+[DEBUG] java.vm.version: 22.0.1+8
+[DEBUG] jdk.debug: release
+[DEBUG] library.jansi.path: C:\Program Files\Apache\Maven\lib\jansi-native
+[DEBUG] line.separator: 
+
+[DEBUG] maven.build.timestamp: 2025-01-06T11:55:59Z
+[DEBUG] maven.build.version: Apache Maven 4.0.0-beta-5 (6e78fcf6f5e76422c0eb358cd11f0c231ecafbad)
+[DEBUG] maven.compiler.release: 22
+[DEBUG] maven.compiler.source: 22
+[DEBUG] maven.compiler.target: 22
+[DEBUG] maven.conf: C:\Program Files\Apache\Maven/conf
+[DEBUG] maven.home: C:\Program Files\Apache\Maven
+[DEBUG] maven.installation.conf: C:\Program Files\Apache\Maven/conf
+[DEBUG] maven.installation.extensions: C:\Program Files\Apache\Maven/conf/extensions.xml
+[DEBUG] maven.installation.settings: C:\Program Files\Apache\Maven/conf/settings.xml
+[DEBUG] maven.installation.toolchains: C:\Program Files\Apache\Maven/conf/toolchains.xml
+[DEBUG] maven.mainClass: org.apache.maven.cling.MavenCling
+[DEBUG] maven.multiModuleProjectDirectory: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] maven.project.conf: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot/.mvn
+[DEBUG] maven.project.extensions: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot/.mvn/extensions.xml
+[DEBUG] maven.project.settings: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot/.mvn/settings.xml
+[DEBUG] maven.repo.central: https://repo.maven.apache.org/maven2
+[DEBUG] maven.user.conf: C:\Users\User/.m2
+[DEBUG] maven.user.extensions: C:\Users\User/.m2/extensions.xml
+[DEBUG] maven.user.settings: C:\Users\User/.m2/settings.xml
+[DEBUG] maven.user.toolchains: C:\Users\User/.m2/toolchains.xml
+[DEBUG] maven.version: 4.0.0-beta-5
+[DEBUG] native.encoding: Cp1252
+[DEBUG] os.arch: amd64
+[DEBUG] os.name: Windows 11
+[DEBUG] os.version: 10.0
+[DEBUG] path.separator: ;
+[DEBUG] project.baseUri: file:/D:/Users/Documents/GitHub/ohgodohnobot/ohgodohnonotavelocitydiscordbot/
+[DEBUG] project.build.outputTimestamp: 1980-02-01T00:00:00Z
+[DEBUG] project.build.sourceEncoding: UTF-8
+[DEBUG] project.reporting.outputEncoding: UTF-8
+[DEBUG] stderr.encoding: cp437
+[DEBUG] stdout.encoding: cp437
+[DEBUG] sun.arch.data.model: 64
+[DEBUG] sun.boot.library.path: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin
+[DEBUG] sun.cpu.endian: little
+[DEBUG] sun.cpu.isalist: amd64
+[DEBUG] sun.io.unicode.encoding: UnicodeLittle
+[DEBUG] sun.java.command: org.codehaus.plexus.classworlds.launcher.Launcher clean install -U -Xlint
+[DEBUG] sun.java.launcher: SUN_STANDARD
+[DEBUG] sun.jnu.encoding: Cp1252
+[DEBUG] sun.management.compiler: HotSpot 64-Bit Tiered Compilers
+[DEBUG] sun.os.patch.level: 
+[DEBUG] user.country: AU
+[DEBUG] user.dir: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] user.home: C:\Users\User
+[DEBUG] user.language: en
+[DEBUG] user.name: User
+[DEBUG] user.script: 
+[DEBUG] user.variant: 
+[DEBUG] Using 'UTF-8' encoding to copy filtered resources.
+[DEBUG] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\test\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource from src\test\resources to target\test-classes
+[DEBUG] resource with targetPath null
+directory D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\test\resources-filtered
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource from src\test\resources-filtered to target\test-classes
+[DEBUG] no user filter components
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ velocity-whitelist ---
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.11.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile:default-testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG]   (f) buildDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG]   (f) compileSourceRoots = [D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac-test
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.11.0:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes
+[DEBUG]   (f) parameters = false
+[DEBUG]   (f) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (s) release = 22
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) showCompilationChanges = false
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = true
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 22
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 22
+[DEBUG]   (f) testPath = [D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes, D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes, C:\Users\User\.m2\repository\com\velocitypowered\velocity-api\3.1.0\velocity-api-3.1.0.jar, C:\Users\User\.m2\repository\com\google\code\gson\gson\2.8.8\gson-2.8.8.jar, C:\Users\User\.m2\repository\com\google\guava\guava\25.1-jre\guava-25.1-jre.jar, C:\Users\User\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar, C:\Users\User\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar, C:\Users\User\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar, C:\Users\User\.m2\repository\com\moandjiezana\toml\toml4j\0.7.2\toml4j-0.7.2.jar, C:\Users\User\.m2\repository\net\kyori\adventure-api\4.9.3\adventure-api-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\adventure-key\4.9.3\adventure-key-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\examination-api\1.3.0\examination-api-1.3.0.jar, C:\Users\User\.m2\repository\net\kyori\examination-string\1.3.0\examination-string-1.3.0.jar, C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-gson\4.9.3\adventure-text-serializer-gson-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-legacy\4.9.3\adventure-text-serializer-legacy-4.9.3.jar, C:\Users\User\.m2\repository\net\kyori\adventure-text-serializer-plain\4.9.3\adventure-text-serializer-plain-4.9.3.jar, C:\Users\User\.m2\repository\com\google\inject\guice\5.0.1\guice-5.0.1.jar, C:\Users\User\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar, C:\Users\User\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar, C:\Users\User\.m2\repository\org\checkerframework\checker-qual\3.6.1\checker-qual-3.6.1.jar, C:\Users\User\.m2\repository\com\velocitypowered\velocity-brigadier\1.0.0-SNAPSHOT\velocity-brigadier-1.0.0-SNAPSHOT.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-hocon\3.7.2\configurate-hocon-3.7.2.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-core\3.7.2\configurate-core-3.7.2.jar, C:\Users\User\.m2\repository\com\typesafe\config\1.4.0\config-1.4.0.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-yaml\3.7.2\configurate-yaml-3.7.2.jar, C:\Users\User\.m2\repository\org\spongepowered\configurate-gson\3.7.2\configurate-gson-3.7.2.jar, C:\Users\User\.m2\repository\net\luckperms\api\5.4\api-5.4.jar, C:\Users\User\.m2\repository\org\mariadb\jdbc\mariadb-java-client\3.0.4\mariadb-java-client-3.0.4.jar, C:\Users\User\.m2\repository\net\dv8tion\JDA\5.0.0-alpha.14\JDA-5.0.0-alpha.14.jar, C:\Users\User\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar, C:\Users\User\.m2\repository\org\jetbrains\annotations\23.0.0\annotations-23.0.0.jar, C:\Users\User\.m2\repository\com\neovisionaries\nv-websocket-client\2.14\nv-websocket-client-2.14.jar, C:\Users\User\.m2\repository\com\squareup\okhttp3\okhttp\4.9.3\okhttp-4.9.3.jar, C:\Users\User\.m2\repository\com\squareup\okio\okio\2.8.0\okio-2.8.0.jar, C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.4.0\kotlin-stdlib-common-1.4.0.jar, C:\Users\User\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.4.10\kotlin-stdlib-1.4.10.jar, C:\Users\User\.m2\repository\club\minnced\opus-java\1.1.1\opus-java-1.1.1.jar, C:\Users\User\.m2\repository\club\minnced\opus-java-api\1.1.1\opus-java-api-1.1.1.jar, C:\Users\User\.m2\repository\net\java\dev\jna\jna\4.4.0\jna-4.4.0.jar, C:\Users\User\.m2\repository\club\minnced\opus-java-natives\1.1.1\opus-java-natives-1.1.1.jar, C:\Users\User\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar, C:\Users\User\.m2\repository\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar, C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.2\jackson-core-2.13.2.jar, C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.2.2\jackson-databind-2.13.2.2.jar, C:\Users\User\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.2\jackson-annotations-2.13.2.jar, C:\Users\User\.m2\repository\org\yaml\snakeyaml\1.32\snakeyaml-1.32.jar, C:\Users\User\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar, C:\Users\User\.m2\repository\org\slf4j\slf4j-simple\2.0.7\slf4j-simple-2.0.7.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ velocity-whitelist ---
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from org.apache.maven.surefire:maven-surefire-common:3.2.5
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire-booter:3.2.5
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire-extensions-api:3.2.5
+[DEBUG] Reading file model from org.apache.maven.shared:maven-common-artifact-filters:3.1.1
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire-api:3.2.5
+[DEBUG] Reading file model from org.eclipse.aether:aether-util:1.0.0.v20140518
+[DEBUG] Reading file model from org.eclipse.aether:aether:1.0.0.v20140518
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire-shared-utils:3.2.5
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-java:1.2.0
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire-logger-api:3.2.5
+[DEBUG] Reading file model from org.eclipse.aether:aether-api:1.0.0.v20140518
+[DEBUG] Reading file model from org.apache.maven.surefire:surefire-extensions-spi:3.2.5
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-languages:1.2.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:15
+[DEBUG] Reading file model from org.apache.maven:maven-artifact:3.2.5
+[DEBUG] Reading file model from org.apache.maven:maven-core:3.2.5
+[DEBUG] Reading file model from org.apache.maven:maven-plugin-api:3.2.5
+[DEBUG] Reading file model from commons-io:commons-io:2.15.1
+[DEBUG] Reading file model from org.apache.maven:maven:3.2.5
+[DEBUG] Reading file model from org.apache.commons:commons-parent:65
+[DEBUG] Reading file model from org.junit:junit-bom:5.10.0
+[DEBUG] Reading file model from org.apache.maven:maven-parent:25
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:25
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.ow2.asm:asm:9.6
+[DEBUG] Reading file model from org.apache:apache:15
+[DEBUG] Replacing repositories from org.ow2.asm:asm:jar:9.6
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    ow2-snapshot (https://repository.ow2.org/nexus/content/repositories/snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.apache.maven:maven-plugin-api:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-artifact:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-core:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.junit:junit-bom:5.10.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-utils:4.0.0
+[DEBUG] Reading file model from org.apache.maven:maven-settings-builder:3.2.5
+[DEBUG] Reading file model from org.apache.maven:maven-repository-metadata:3.2.5
+[DEBUG] Reading file model from org.apache.maven:maven-settings:3.2.5
+[DEBUG] Merging repositories from [inherited]:plexus-utils:jar:4.0.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+oss.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots/, default, snapshots)
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:13
+[DEBUG] Reading file model from org.apache.maven:maven-model-builder:3.2.5
+[DEBUG] Replacing repositories from org.apache.maven:maven-repository-metadata:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-settings:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-settings-builder:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.apache.maven:maven-aether-provider:3.2.5
+[DEBUG] Replacing repositories from org.apache.maven:maven-model-builder:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.eclipse.sisu:org.eclipse.sisu.plexus:0.9.0.M2
+[DEBUG] Reading file model from org.eclipse.aether:aether-impl:1.0.0.v20140518
+[DEBUG] Reading file model from org.sonatype.sisu:sisu-guice:3.2.3
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-interpolation:1.21
+[DEBUG] Reading file model from org.eclipse.sisu:sisu-plexus:0.9.0.M2
+[DEBUG] Replacing repositories from org.apache.maven:maven-aether-provider:jar:3.2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.9.0.M2
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.sonatype.sisu.inject:guice-parent:3.2.3
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-components:1.3.1
+[DEBUG] Merging repositories from [inherited]:plexus-components:pom:1.3.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-classworlds:2.5.2
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-component-annotations:2.0.0
+[DEBUG] Reading file model from org.sonatype.plexus:plexus-sec-dispatcher:1.3
+[DEBUG] Reading file model from org.sonatype.forge:forge-parent:38
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:3.3.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-containers:2.0.0
+[DEBUG] Reading file model from org.sonatype.spice:spice-parent:12
+[DEBUG] Reading file model from org.sonatype.spice:spice-parent:17
+[DEBUG] Reading file model from org.sonatype.forge:forge-parent:4
+[DEBUG] Reading file model from org.eclipse.aether:aether-spi:1.0.0.v20140518
+[DEBUG] Reading file model from org.sonatype.forge:forge-parent:10
+[DEBUG] Reading file model from javax.annotation:javax.annotation-api:1.2
+[DEBUG] Reading file model from javax.enterprise:cdi-api:1.2
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for jboss-public-repository-group (http://repository.jboss.org/nexus/content/groups/public).
+[DEBUG] Merging repositories from javax.enterprise:cdi-api:jar:1.2
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+maven-default-http-blocker (http://0.0.0.0/, default, releases+snapshots, blocked)
+sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.codehaus.plexus:plexus-interpolation:jar:1.21
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+    plexus.snapshots (https://oss.sonatype.org/content/repositories/plexus-snapshots, default, snapshots)
+[DEBUG] Reading file model from net.java:jvnet-parent:3
+[DEBUG] Reading file model from org.jboss.weld:weld-parent:26
+[DEBUG] Reading file model from org.eclipse.sisu:org.eclipse.sisu.inject:0.9.0.M2
+[DEBUG] Replacing repositories from javax.annotation:javax.annotation-api:jar:1.2
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+    jvnet-nexus-snapshots (https://maven.java.net/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from com.google.guava:guava:18.0
+[DEBUG] Reading file model from org.sonatype.plexus:plexus-cipher:1.7
+[DEBUG] Reading file model from org.eclipse.sisu:sisu-inject:0.9.0.M2
+[DEBUG] Reading file model from com.google.guava:guava-parent:18.0
+[DEBUG] Replacing repositories from com.google.guava:guava:bundle:18.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=316300, ConflictMarker.markTime=280700, ConflictMarker.nodeCount=90, ConflictIdSorter.graphTime=119200, ConflictIdSorter.topsortTime=38900, ConflictIdSorter.conflictIdCount=39, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1478400, ConflictResolver.conflictItemCount=76, BfDependencyCollector.collectTime=109569300, BfDependencyCollector.transformTime=2265100}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:3.2.5
+[DEBUG] \- org.apache.maven.surefire:maven-surefire-common:jar:3.2.5 [compile]
+[DEBUG]    +- org.apache.maven.surefire:surefire-api:jar:3.2.5 [compile]
+[DEBUG]    |  \- org.apache.maven.surefire:surefire-logger-api:jar:3.2.5 [compile]
+[DEBUG]    +- org.apache.maven.surefire:surefire-extensions-api:jar:3.2.5 [compile]
+[DEBUG]    +- org.apache.maven.surefire:surefire-booter:jar:3.2.5 [compile]
+[DEBUG]    |  \- org.apache.maven.surefire:surefire-extensions-spi:jar:3.2.5 [compile]
+[DEBUG]    +- org.eclipse.aether:aether-util:jar:1.0.0.v20140518 [compile]
+[DEBUG]    |  \- org.eclipse.aether:aether-api:jar:1.0.0.v20140518 [compile]
+[DEBUG]    +- org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.1 [compile]
+[DEBUG]    |  +- org.apache.maven:maven-artifact:jar:3.2.5 [provided]
+[DEBUG]    |  |  \- org.codehaus.plexus:plexus-utils:jar:4.0.0 [provided]
+[DEBUG]    |  +- org.apache.maven:maven-core:jar:3.2.5 [provided]
+[DEBUG]    |  |  +- org.apache.maven:maven-settings:jar:3.2.5 [provided]
+[DEBUG]    |  |  +- org.apache.maven:maven-settings-builder:jar:3.2.5 [provided]
+[DEBUG]    |  |  +- org.apache.maven:maven-repository-metadata:jar:3.2.5 [provided]
+[DEBUG]    |  |  +- org.apache.maven:maven-model-builder:jar:3.2.5 [provided]
+[DEBUG]    |  |  +- org.apache.maven:maven-aether-provider:jar:3.2.5 [provided]
+[DEBUG]    |  |  |  \- org.eclipse.aether:aether-spi:jar:1.0.0.v20140518 [provided]
+[DEBUG]    |  |  +- org.eclipse.aether:aether-impl:jar:1.0.0.v20140518 [provided]
+[DEBUG]    |  |  +- org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.9.0.M2 [provided]
+[DEBUG]    |  |  |  +- javax.annotation:javax.annotation-api:jar:1.2 [provided]
+[DEBUG]    |  |  |  +- javax.enterprise:cdi-api:jar:1.2 [provided]
+[DEBUG]    |  |  |  \- org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.9.0.M2 [provided]
+[DEBUG]    |  |  +- org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.3 [provided]
+[DEBUG]    |  |  |  +- javax.inject:javax.inject:jar:1 [provided]
+[DEBUG]    |  |  |  +- aopalliance:aopalliance:jar:1.0 [provided]
+[DEBUG]    |  |  |  \- com.google.guava:guava:jar:18.0 [provided]
+[DEBUG]    |  |  +- org.codehaus.plexus:plexus-interpolation:jar:1.21 [provided]
+[DEBUG]    |  |  +- org.codehaus.plexus:plexus-classworlds:jar:2.5.2 [provided]
+[DEBUG]    |  |  +- org.codehaus.plexus:plexus-component-annotations:jar:2.0.0 [provided]
+[DEBUG]    |  |  \- org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3 [provided]
+[DEBUG]    |  |     \- org.sonatype.plexus:plexus-cipher:jar:1.7 [provided]
+[DEBUG]    |  +- org.apache.maven:maven-plugin-api:jar:3.2.5 [provided]
+[DEBUG]    |  \- commons-io:commons-io:jar:2.15.1 [compile]
+[DEBUG]    +- org.codehaus.plexus:plexus-java:jar:1.2.0 [compile]
+[DEBUG]    |  +- org.ow2.asm:asm:jar:9.6 [compile]
+[DEBUG]    |  \- com.thoughtworks.qdox:qdox:jar:2.0.3 [compile]
+[DEBUG]    \- org.apache.maven.surefire:surefire-shared-utils:jar:3.2.5 [compile]
+[DEBUG]   Excluded: org.eclipse.aether:aether-util:jar:1.0.0.v20140518
+[DEBUG]   Excluded: org.eclipse.aether:aether-api:jar:1.0.0.v20140518
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-logger-api:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-extensions-api:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.surefire:surefire-extensions-spi:jar:3.2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.15.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.2.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.6
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0.3
+[DEBUG]   Included: org.apache.maven.surefire:surefire-shared-utils:jar:3.2.5
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:3.2.5, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test:default-test' with basic configurator -->
+[DEBUG]   (f) additionalClasspathDependencies = []
+[DEBUG]   (s) additionalClasspathElements = []
+[DEBUG]   (s) basedir = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (f) classesDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]   (s) classpathDependencyExcludes = []
+[DEBUG]   (s) dependenciesToScan = []
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) encoding = UTF-8
+[DEBUG]   (s) excludeJUnit5Engines = []
+[DEBUG]   (f) excludedEnvironmentVariables = []
+[DEBUG]   (s) excludes = []
+[DEBUG]   (s) failIfNoSpecifiedTests = true
+[DEBUG]   (s) failIfNoTests = false
+[DEBUG]   (s) failOnFlakeCount = 0
+[DEBUG]   (f) forkCount = 1
+[DEBUG]   (s) forkedProcessExitTimeoutInSeconds = 30
+[DEBUG]   (s) includeJUnit5Engines = []
+[DEBUG]   (s) includes = []
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) parallelOptimized = true
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:3.2.5, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:3.2.5, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:3.2.5, org.apache.maven.surefire:surefire-logger-api=org.apache.maven.surefire:surefire-logger-api:jar:3.2.5, org.apache.maven.surefire:surefire-extensions-api=org.apache.maven.surefire:surefire-extensions-api:jar:3.2.5, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:3.2.5, org.apache.maven.surefire:surefire-extensions-spi=org.apache.maven.surefire:surefire-extensions-spi:jar:3.2.5, org.eclipse.aether:aether-util=org.eclipse.aether:aether-util:jar:1.0.0.v20140518, org.eclipse.aether:aether-api=org.eclipse.aether:aether-api:jar:1.0.0.v20140518, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.1, commons-io:commons-io=commons-io:commons-io:jar:2.15.1, org.codehaus.plexus:plexus-java=org.codehaus.plexus:plexus-java:jar:1.2.0, org.ow2.asm:asm=org.ow2.asm:asm:jar:9.6, com.thoughtworks.qdox:qdox=com.thoughtworks.qdox:qdox:jar:2.0.3, org.apache.maven.surefire:surefire-shared-utils=org.apache.maven.surefire:surefire-shared-utils:jar:3.2.5}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugins.maven_surefire_plugin.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:3.2.5:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:3.2.5:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (s) projectArtifactMap = {com.velocitypowered:velocity-api=com.velocitypowered:velocity-api:jar:3.1.0:provided, com.google.code.gson:gson=com.google.code.gson:gson:jar:2.8.8:provided, com.google.guava:guava=com.google.guava:guava:jar:25.1-jre:provided, com.google.errorprone:error_prone_annotations=com.google.errorprone:error_prone_annotations:jar:2.1.3:provided, com.google.j2objc:j2objc-annotations=com.google.j2objc:j2objc-annotations:jar:1.1:provided, org.codehaus.mojo:animal-sniffer-annotations=org.codehaus.mojo:animal-sniffer-annotations:jar:1.14:provided, com.moandjiezana.toml:toml4j=com.moandjiezana.toml:toml4j:jar:0.7.2:provided, net.kyori:adventure-api=net.kyori:adventure-api:jar:4.9.3:provided, net.kyori:adventure-key=net.kyori:adventure-key:jar:4.9.3:provided, net.kyori:examination-api=net.kyori:examination-api:jar:1.3.0:provided, net.kyori:examination-string=net.kyori:examination-string:jar:1.3.0:provided, net.kyori:adventure-text-serializer-gson=net.kyori:adventure-text-serializer-gson:jar:4.9.3:provided, net.kyori:adventure-text-serializer-legacy=net.kyori:adventure-text-serializer-legacy:jar:4.9.3:provided, net.kyori:adventure-text-serializer-plain=net.kyori:adventure-text-serializer-plain:jar:4.9.3:provided, com.google.inject:guice=com.google.inject:guice:jar:5.0.1:provided, javax.inject:javax.inject=javax.inject:javax.inject:jar:1:provided, aopalliance:aopalliance=aopalliance:aopalliance:jar:1.0:provided, org.checkerframework:checker-qual=org.checkerframework:checker-qual:jar:3.6.1:provided, com.velocitypowered:velocity-brigadier=com.velocitypowered:velocity-brigadier:jar:1.0.0-SNAPSHOT:provided, org.spongepowered:configurate-hocon=org.spongepowered:configurate-hocon:jar:3.7.2:provided, org.spongepowered:configurate-core=org.spongepowered:configurate-core:jar:3.7.2:provided, com.typesafe:config=com.typesafe:config:jar:1.4.0:provided, org.spongepowered:configurate-yaml=org.spongepowered:configurate-yaml:jar:3.7.2:provided, org.spongepowered:configurate-gson=org.spongepowered:configurate-gson:jar:3.7.2:provided, net.luckperms:api=net.luckperms:api:jar:5.4:compile, org.mariadb.jdbc:mariadb-java-client=org.mariadb.jdbc:mariadb-java-client:jar:3.0.4:compile, net.dv8tion:JDA=net.dv8tion:JDA:jar:5.0.0-alpha.14:compile, com.google.code.findbugs:jsr305=com.google.code.findbugs:jsr305:jar:3.0.2:compile, org.jetbrains:annotations=org.jetbrains:annotations:jar:23.0.0:compile, com.neovisionaries:nv-websocket-client=com.neovisionaries:nv-websocket-client:jar:2.14:compile, com.squareup.okhttp3:okhttp=com.squareup.okhttp3:okhttp:jar:4.9.3:compile, com.squareup.okio:okio=com.squareup.okio:okio:jar:2.8.0:compile, org.jetbrains.kotlin:kotlin-stdlib-common=org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.4.0:compile, org.jetbrains.kotlin:kotlin-stdlib=org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.10:compile, club.minnced:opus-java=club.minnced:opus-java:jar:1.1.1:compile, club.minnced:opus-java-api=club.minnced:opus-java-api:jar:1.1.1:compile, net.java.dev.jna:jna=net.java.dev.jna:jna:jar:4.4.0:runtime, club.minnced:opus-java-natives=club.minnced:opus-java-natives:jar:1.1.1:compile, org.apache.commons:commons-collections4=org.apache.commons:commons-collections4:jar:4.4:compile, net.sf.trove4j:trove4j=net.sf.trove4j:trove4j:jar:3.0.3:runtime, com.fasterxml.jackson.core:jackson-core=com.fasterxml.jackson.core:jackson-core:jar:2.13.2:runtime, com.fasterxml.jackson.core:jackson-databind=com.fasterxml.jackson.core:jackson-databind:jar:2.13.2.2:runtime, com.fasterxml.jackson.core:jackson-annotations=com.fasterxml.jackson.core:jackson-annotations:jar:2.13.2:runtime, org.yaml:snakeyaml=org.yaml:snakeyaml:jar:1.32:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:2.0.7:compile, org.slf4j:slf4j-simple=org.slf4j:slf4j-simple:jar:2.0.7:compile}
+[DEBUG]   (s) projectBuildDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\surefire-reports
+[DEBUG]   (f) rerunFailingTestsCount = 0
+[DEBUG]   (f) reuseForks = true
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) shutdown = exit
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) skipAfterFailureCount = 0
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) suiteXmlFiles = []
+[DEBUG]   (s) tempDir = surefire
+[DEBUG]   (s) testClassesDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\src\test\java
+[DEBUG]   (s) threadCountClasses = 0
+[DEBUG]   (s) threadCountMethods = 0
+[DEBUG]   (s) threadCountSuites = 0
+[DEBUG]   (s) trimStackTrace = false
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (f) useModulePath = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot
+[DEBUG] -- end configuration --
+[DEBUG] Using JVM: C:\Program Files\Eclipse Adoptium\jdk-22.0.1.8-hotspot\bin\java with Java version 22.0
+[DEBUG] Resolved included and excluded patterns: **/Test*.java, **/*Test.java, **/*Tests.java, **/*TestCase.java, !**/*$*
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ velocity-whitelist ---
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-jar-plugin:maven-plugin:3.4.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from org.apache.maven:maven-archiver:3.6.2
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-utils:4.0.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-archiver:4.9.2
+[DEBUG] Reading file model from org.apache.maven.shared:file-management:3.1.0
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:36
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:17
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:41
+[DEBUG] Reading file model from org.apache.maven:maven-parent:36
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:36
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache:apache:26
+[DEBUG] Reading file model from commons-codec:commons-codec:1.16.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-interpolation:1.27
+[DEBUG] Reading file model from commons-io:commons-io:2.16.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-io:3.4.2
+[DEBUG] Reading file model from org.apache.commons:commons-parent:66
+[DEBUG] Reading file model from org.apache.commons:commons-compress:1.26.1
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:16
+[DEBUG] Reading file model from org.apache.commons:commons-parent:69
+[DEBUG] Reading file model from org.tukaani:xz:1.9
+[DEBUG] Reading file model from org.iq80.snappy:snappy:0.4
+[DEBUG] Reading file model from com.github.luben:zstd-jni:1.5.5-11
+[DEBUG] Replacing repositories from org.iq80.snappy:snappy:jar:0.4
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    sonatype-nexus-snapshots (https://oss.sonatype.org/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.apache.commons:commons-lang3:3.14.0
+[DEBUG] Reading file model from org.apache.commons:commons-parent:64
+[DEBUG] Reading file model from org.apache:apache:30
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=162300, ConflictMarker.markTime=52600, ConflictMarker.nodeCount=44, ConflictIdSorter.graphTime=54800, ConflictIdSorter.topsortTime=16200, ConflictIdSorter.conflictIdCount=16, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=411500, ConflictResolver.conflictItemCount=28, BfDependencyCollector.collectTime=121396800, BfDependencyCollector.transformTime=715800}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:3.4.1
+[DEBUG] +- org.apache.maven.shared:file-management:jar:3.1.0 [compile]
+[DEBUG] |  \- commons-io:commons-io:jar:2.16.1 [compile]
+[DEBUG] +- org.apache.maven:maven-archiver:jar:3.6.2 [compile]
+[DEBUG] |  \- org.codehaus.plexus:plexus-interpolation:jar:1.27 [compile]
+[DEBUG] +- org.codehaus.plexus:plexus-utils:jar:4.0.1 [compile]
+[DEBUG] +- org.codehaus.plexus:plexus-archiver:jar:4.9.2 [compile]
+[DEBUG] |  +- org.codehaus.plexus:plexus-io:jar:3.4.2 [compile]
+[DEBUG] |  +- org.apache.commons:commons-compress:jar:1.26.1 [compile]
+[DEBUG] |  |  \- org.apache.commons:commons-lang3:jar:3.14.0 [compile]
+[DEBUG] |  +- commons-codec:commons-codec:jar:1.16.1 [compile]
+[DEBUG] |  +- org.iq80.snappy:snappy:jar:0.4 [compile]
+[DEBUG] |  +- org.tukaani:xz:jar:1.9 [runtime]
+[DEBUG] |  \- com.github.luben:zstd-jni:jar:1.5.5-11 [runtime]
+[DEBUG] +- javax.inject:javax.inject:jar:1 [compile]
+[DEBUG] \- org.slf4j:slf4j-api:jar:1.7.36 [compile]
+[DEBUG]   Excluded: javax.inject:javax.inject:jar:1
+[DEBUG]   Excluded: org.slf4j:slf4j-api:jar:1.7.36
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:3.4.1
+[DEBUG]   Included: org.apache.maven.shared:file-management:jar:3.1.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.16.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:3.6.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.27
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:4.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:4.9.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:3.4.2
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.26.1
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.14.0
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.16.1
+[DEBUG]   Included: org.iq80.snappy:snappy:jar:0.4
+[DEBUG]   Included: org.tukaani:xz:jar:1.9
+[DEBUG]   Included: com.github.luben:zstd-jni:jar:1.5.5-11
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-jar-plugin:3.4.1:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:3.4.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-jar-plugin:3.4.1:jar:default-jar' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) classesDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\classes
+[DEBUG]   (f) detectMultiReleaseJar = true
+[DEBUG]   (f) finalName = velocity-whitelist-2.0.0
+[DEBUG]   (f) forceCreation = false
+[DEBUG]   (f) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG]   (f) outputTimestamp = 1980-02-01T00:00:00Z
+[DEBUG]   (f) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[DEBUG] isUp2date: false (Destination D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\velocity-whitelist-2.0.0.jar not found.)
+[INFO] Building jar: D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target\velocity-whitelist-2.0.0.jar
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding directory com/
+[DEBUG] adding directory com/keevers/
+[DEBUG] adding directory com/keevers/chumpcode/
+[DEBUG] adding directory com/keevers/logging/
+[DEBUG] adding directory com/keevers/velocitydiscord/
+[DEBUG] adding directory com/keevers/velocitydiscordbot/
+[DEBUG] adding directory com/keevers/velocitymariadb/
+[DEBUG] adding directory com/keevers/velocitywhitelist/
+[DEBUG] adding directory com/tini/
+[DEBUG] adding directory com/tini/discordrewards/
+[DEBUG] adding directory me/
+[DEBUG] adding directory me/tini/
+[DEBUG] adding directory me/tini/discordrewards/
+[DEBUG] adding entry com/keevers/chumpcode/ChumpCodeChecker.class
+[DEBUG] adding entry com/keevers/logging/CustomLogger.class
+[DEBUG] adding entry com/keevers/velocitydiscord/VelocityDiscordBot.class
+[DEBUG] adding entry com/keevers/velocitydiscordbot/VelocityDiscordBot.class
+[DEBUG] adding entry com/keevers/velocitymariadb/VelocityMariaDB$Reward.class
+[DEBUG] adding entry com/keevers/velocitymariadb/VelocityMariaDB.class
+[DEBUG] adding entry com/keevers/velocitywhitelist/VelocityListener.class
+[DEBUG] adding entry com/keevers/velocitywhitelist/VelocityWhitelist.class
+[DEBUG] adding entry com/tini/discordrewards/DiscordJoinListener.class
+[DEBUG] adding entry com/tini/discordrewards/RewardsElf.class
+[DEBUG] adding entry me/tini/discordrewards/CodeGenerator.class
+[DEBUG] adding entry velocity-plugin.json
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/com.keevers/
+[DEBUG] adding directory META-INF/maven/com.keevers/velocity-whitelist/
+[DEBUG] adding entry META-INF/maven/com.keevers/velocity-whitelist/pom.xml
+[DEBUG] adding entry META-INF/maven/com.keevers/velocity-whitelist/pom.properties
+[INFO] 
+[INFO] --- shade:3.4.1:shade (default) @ velocity-whitelist ---
+[DEBUG] Replacing repositories from org.apache.maven.plugins:maven-shade-plugin:maven-plugin:3.4.1
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Using thread pool with 5 threads to resolve descriptors.
+[DEBUG] Collector skip mode enabled
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-utils:3.4.2
+[DEBUG] Reading file model from org.apache.maven.shared:maven-artifact-transfer:0.13.1
+[DEBUG] Reading file model from org.ow2.asm:asm-commons:9.4
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:8
+[DEBUG] Reading file model from org.apache.maven.shared:maven-dependency-tree:3.2.0
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:37
+[DEBUG] Reading file model from org.jdom:jdom2:2.0.6.1
+[DEBUG] Reading file model from org.vafer:jdependency:2.8.0
+[DEBUG] Replacing repositories from org.ow2.asm:asm-commons:jar:9.4
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+    ow2-snapshot (https://repository.ow2.org/nexus/content/repositories/snapshots, default, snapshots)
+[DEBUG] Reading file model from org.slf4j:slf4j-api:1.7.32
+[DEBUG] Reading file model from org.apache.commons:commons-collections4:4.2
+[DEBUG] Reading file model from org.apache.maven:maven-core:3.0
+[DEBUG] Reading file model from org.apache.commons:commons-parent:47
+[DEBUG] Reading file model from org.apache.maven:maven:3.0
+[DEBUG] Reading file model from org.apache.maven:maven-artifact:3.0
+[DEBUG] Reading file model from org.apache.maven:maven-parent:15
+[DEBUG] Reading file model from org.apache:apache:19
+[DEBUG] Reading file model from org.apache:apache:6
+[DEBUG] Reading file model from org.apache.maven.shared:maven-common-artifact-filters:3.1.0
+[DEBUG] Replacing repositories from org.apache.maven:maven-artifact:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:33
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-utils:3.3.0
+[DEBUG] Reading file model from org.slf4j:slf4j-api:1.7.5
+[DEBUG] Reading file model from org.slf4j:slf4j-parent:1.7.32
+[DEBUG] Reading file model from org.apache.maven:maven-parent:33
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:33
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Replacing repositories from org.apache.maven:maven-core:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.slf4j:slf4j-parent:1.7.5
+[DEBUG] Reading file model from org.apache.maven:maven-model:3.0
+[DEBUG] Reading file model from org.apache.maven:maven-settings-builder:3.0
+[DEBUG] Reading file model from org.apache.maven:maven-settings:3.0
+[DEBUG] Reading file model from org.ow2.asm:asm-tree:9.4
+[DEBUG] Replacing repositories from org.apache.maven:maven-settings:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-settings-builder:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-model:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.apache.maven:maven-repository-metadata:3.0
+[DEBUG] Reading file model from org.apache.maven:maven-plugin-api:3.0
+[DEBUG] Reading file model from org.sonatype.aether:aether-impl:1.7
+[DEBUG] Reading file model from org.apache.maven:maven-model-builder:3.0
+[DEBUG] Reading file model from org.apache.maven:maven-aether-provider:3.0
+[DEBUG] Replacing repositories from org.apache.maven:maven-plugin-api:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-model-builder:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Replacing repositories from org.apache.maven:maven-repository-metadata:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.sonatype.aether:aether-parent:1.7
+[DEBUG] Reading file model from org.sonatype.aether:aether-api:1.7
+[DEBUG] Reading file model from org.sonatype.aether:aether-util:1.7
+[DEBUG] Reading file model from org.sonatype.forge:forge-parent:6
+[DEBUG] Replacing repositories from org.apache.maven:maven-aether-provider:jar:3.0
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-interpolation:1.14
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-utils:3.1.0
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-components:1.1.18
+[DEBUG] Reading file model from org.codehaus.plexus:plexus-classworlds:2.2.3
+[DEBUG] Reading file model from org.codehaus.plexus:plexus:2.0.6
+[DEBUG] Reading file model from org.sonatype.aether:aether-spi:1.7
+[DEBUG] Reading file model from org.apache.maven.shared:maven-shared-components:30
+[DEBUG] Reading file model from org.sonatype.plexus:plexus-cipher:1.4
+[DEBUG] Reading file model from org.apache.maven:maven-parent:30
+[DEBUG] Merging repositories from org.apache.maven:maven-parent:pom:30
+    central (https://repo.maven.apache.org/maven2, default, releases)
+apache.snapshots (https://repository.apache.org/snapshots, default, snapshots)
+[DEBUG] Reading file model from commons-io:commons-io:2.5
+[DEBUG] Reading file model from org.apache.commons:commons-parent:39
+[DEBUG] Reading file model from org.apache:apache:16
+[DEBUG] Replacing repositories from commons-io:commons-io:jar:2.5
+    central (https://repo.maven.apache.org/maven2, default, releases)
+    maven-default-http-blocker (http://0.0.0.0/, default, snapshots, blocked)
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=220000, ConflictMarker.markTime=72200, ConflictMarker.nodeCount=81, ConflictIdSorter.graphTime=109100, ConflictIdSorter.topsortTime=27900, ConflictIdSorter.conflictIdCount=34, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1188100, ConflictResolver.conflictItemCount=73, BfDependencyCollector.collectTime=189004700, BfDependencyCollector.transformTime=1644000}
+[DEBUG] org.apache.maven.plugins:maven-shade-plugin:jar:3.4.1
+[DEBUG] +- org.codehaus.plexus:plexus-utils:jar:3.4.2 [compile]
+[DEBUG] +- org.apache.maven.shared:maven-artifact-transfer:jar:0.13.1 [compile]
+[DEBUG] |  +- org.apache.maven:maven-core:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-model:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-settings:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-settings-builder:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-repository-metadata:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-plugin-api:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-model-builder:jar:3.0 [compile]
+[DEBUG] |  |  +- org.apache.maven:maven-aether-provider:jar:3.0 [runtime]
+[DEBUG] |  |  +- org.sonatype.aether:aether-impl:jar:1.7 [compile]
+[DEBUG] |  |  |  \- org.sonatype.aether:aether-spi:jar:1.7 [compile]
+[DEBUG] |  |  +- org.sonatype.aether:aether-api:jar:1.7 [compile]
+[DEBUG] |  |  +- org.sonatype.aether:aether-util:jar:1.7 [compile]
+[DEBUG] |  |  +- org.codehaus.plexus:plexus-interpolation:jar:1.14 [compile]
+[DEBUG] |  |  +- org.codehaus.plexus:plexus-classworlds:jar:2.2.3 [compile]
+[DEBUG] |  |  \- org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3 [compile]
+[DEBUG] |  |     \- org.sonatype.plexus:plexus-cipher:jar:1.4 [compile]
+[DEBUG] |  +- org.apache.maven:maven-artifact:jar:3.0 [compile]
+[DEBUG] |  +- org.codehaus.plexus:plexus-component-annotations:jar:2.1.1 [compile]
+[DEBUG] |  \- org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.0 [compile]
+[DEBUG] |     \- org.apache.maven.shared:maven-shared-utils:jar:3.1.0 [compile]
+[DEBUG] +- org.slf4j:slf4j-api:jar:1.7.32 [compile]
+[DEBUG] +- org.ow2.asm:asm:jar:9.4 [compile]
+[DEBUG] +- org.ow2.asm:asm-commons:jar:9.4 [compile]
+[DEBUG] |  \- org.ow2.asm:asm-tree:jar:9.4 [compile]
+[DEBUG] +- org.jdom:jdom2:jar:2.0.6.1 [compile]
+[DEBUG] +- org.apache.maven.shared:maven-dependency-tree:jar:3.2.0 [compile]
+[DEBUG] |  \- org.eclipse.aether:aether-util:jar:1.0.0.v20140518 [compile]
+[DEBUG] |     \- org.eclipse.aether:aether-api:jar:1.0.0.v20140518 [compile]
+[DEBUG] +- commons-io:commons-io:jar:2.6 [compile]
+[DEBUG] +- org.vafer:jdependency:jar:2.8.0 [compile]
+[DEBUG] \- org.apache.commons:commons-collections4:jar:4.2 [compile]
+[DEBUG]   Excluded: org.apache.maven:maven-core:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-settings-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-repository-metadata:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-plugin-api:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-model-builder:jar:3.0
+[DEBUG]   Excluded: org.apache.maven:maven-aether-provider:jar:3.0
+[DEBUG]   Excluded: org.sonatype.aether:aether-impl:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-spi:jar:1.7
+[DEBUG]   Excluded: org.sonatype.aether:aether-api:jar:1.7
+[DEBUG]   Excluded: org.codehaus.plexus:plexus-classworlds:jar:2.2.3
+[DEBUG]   Excluded: org.apache.maven:maven-artifact:jar:3.0
+[DEBUG]   Excluded: org.slf4j:slf4j-api:jar:1.7.32
+[DEBUG]   Excluded: org.eclipse.aether:aether-util:jar:1.0.0.v20140518
+[DEBUG]   Excluded: org.eclipse.aether:aether-api:jar:1.0.0.v20140518
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-shade-plugin:3.4.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-shade-plugin:3.4.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-shade-plugin:3.4.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-shade-plugin:jar:3.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.4.2
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.13.1
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.1.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.1.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.1.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.4
+[DEBUG]   Included: org.ow2.asm:asm-commons:jar:9.4
+[DEBUG]   Included: org.ow2.asm:asm-tree:jar:9.4
+[DEBUG]   Included: org.jdom:jdom2:jar:2.0.6.1
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:3.2.0
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.vafer:jdependency:jar:2.8.0
+[DEBUG]   Included: org.apache.commons:commons-collections4:jar:4.2
+[DEBUG] Loading mojo org.apache.maven.plugins:maven-shade-plugin:3.4.1:shade from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-shade-plugin:3.4.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@33909752]
+[DEBUG] Configuring mojo execution 'org.apache.maven.plugins:maven-shade-plugin:3.4.1:shade:default' with basic configurator -->
+[DEBUG]   (f) createDependencyReducedPom = true
+[DEBUG]   (f) dependencyReducedPomLocation = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\dependency-reduced-pom.xml
+[DEBUG]   (f) generateUniqueDependencyReducedPom = false
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///C:/Users/User/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+releases: [enabled => true, update => always]   blocked: false
+
+[DEBUG]   (f) minimizeJar = true
+[DEBUG]   (f) outputDirectory = D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\target
+[DEBUG]   (f) project = MavenProject: com.keevers:velocity-whitelist:2.0.0 @ D:\Users\Documents\GitHub\ohgodohnobot\ohgodohnonotavelocitydiscordbot\pom.xml
+[DEBUG]   (f) pattern = net.dv8tion.jda
+[DEBUG]   (f) shadedPattern = com.keevers.shaded.jda
+[DEBUG]   (f) relocations = [org.apache.maven.plugins.shade.mojo.PackageRelocation@6cac0334]
+[DEBUG]   (f) remoteArtifactRepositories = [      id: velocitypowered
+      url: https://repo.velocitypowered.com/snapshots/
+   layout: default
+snapshots: [enabled => true, update => daily]
+releases: [enabled => true, update => daily]   blocked: false
+,       id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+releases: [enabled => true, update => daily]   blocked: false
+]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@3fde2209
+[DEBUG]   (f) shadeSourcesContent = false
+[DEBUG]   (f) shadeTestJar = false
+[DEBUG]   (f) shadedArtifactId = velocity-whitelist
+[DEBUG]   (f) shadedClassifierName = shaded
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) useBaseVersion = false
+[DEBUG]   (f) useDependencyReducedPomInJar = false
+[DEBUG] -- end configuration --
+[INFO] Including net.luckperms:api:jar:5.4 in the shaded jar.
+[INFO] Including org.mariadb.jdbc:mariadb-java-client:jar:3.0.4 in the shaded jar.
+[INFO] Including net.dv8tion:JDA:jar:5.0.0-alpha.14 in the shaded jar.
+[INFO] Including com.google.code.findbugs:jsr305:jar:3.0.2 in the shaded jar.
+[INFO] Including org.jetbrains:annotations:jar:23.0.0 in the shaded jar.
+[INFO] Including com.neovisionaries:nv-websocket-client:jar:2.14 in the shaded jar.
+[INFO] Including com.squareup.okhttp3:okhttp:jar:4.9.3 in the shaded jar.
+[INFO] Including com.squareup.okio:okio:jar:2.8.0 in the shaded jar.
+[INFO] Including org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.4.0 in the shaded jar.
+[INFO] Including org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.10 in the shaded jar.
+[INFO] Including club.minnced:opus-java:jar:1.1.1 in the shaded jar.
+[INFO] Including club.minnced:opus-java-api:jar:1.1.1 in the shaded jar.
+[INFO] Including net.java.dev.jna:jna:jar:4.4.0 in the shaded jar.

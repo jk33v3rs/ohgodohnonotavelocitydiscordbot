@@ -1,0 +1,12 @@
+com\keevers\chumpcode\ChumpCodeChecker.class
+com\keevers\velocitymariadb\VelocityMariaDB$Reward.class
+com\keevers\logging\CustomLogger.class
+com\tini\discordrewards\DiscordJoinListener.class
+com\keevers\velocitydiscord\VelocityDiscordBot.class
+velocity-plugin.json
+com\keevers\velocitywhitelist\VelocityListener.class
+com\keevers\velocitywhitelist\VelocityWhitelist.class
+com\keevers\velocitydiscordbot\VelocityDiscordBot.class
+com\keevers\velocitymariadb\VelocityMariaDB.class
+com\tini\discordrewards\RewardsElf.class
+me\tini\discordrewards\CodeGenerator.class

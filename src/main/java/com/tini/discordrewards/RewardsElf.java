@@ -1,77 +1,60 @@
-package me.tini.discordrewards;
+package com.tini.discordrewards;
 
-import me.tini.discordrewards.config.Config;
-import me.tini.discordrewards.config.RewardManager;
-import me.tini.discordrewards.linking.LinkedAccount;
-import me.tini.discordrewards.util.CodeGenerator;
-import net.dv8tion.jda.api.entities.User;
-import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
+import com.keevers.velocitymariadb.VelocityMariaDB.Reward;
+import java.util.List;
+import java.util.Map;
 import java.util.UUID;
+import com.keevers.logging.CustomLogger;
 
 public class RewardsElf {
+    private Map<Integer, List<String>> messageRewards;
+    private boolean sendDiscordMessage;
+    private final CustomLogger logger;
 
-    private static final Logger logger = LoggerFactory.getLogger(RewardsElf.class);
-
-    private final VelocityMariaDB database;
-    private final RewardManager rewardManager;
-
-    public RewardsElf(VelocityMariaDB database, RewardManager rewardManager) {
-        this.database = database;
-        this.rewardManager = rewardManager;
+    // Constructor
+    public RewardsElf(CustomLogger logger) {
+        this.logger = logger;
     }
 
-    public void handleReward(LinkedAccount account, User user, MessageReceivedEvent event, Config config) {
-        UUID uuid = UUID.fromString(account.getMinecraftUUID());
-        int newMessageCount = account.getMessageCount() + 1;
-        account.setMessageCount(newMessageCount);
+    // Example method to get cached rewards
+    public List<Reward> getCachedRewards(UUID uuid) {
+        // Implementation to retrieve cached rewards
+        return null;
+    }
 
-        // Update the account message count in the database
-        database.updateLinkedAccount(account);
+    // Example method to give reward
+    public void give(Reward reward, UUID uuid) {
+        // Implementation to give reward
+    }
 
-        if (rewardManager.appliesForReward(newMessageCount)) {
-            // Logic to give reward to the player
-            rewardManager.giveReward(uuid, newMessageCount);
+    // Example method to clean cache
+    public void cleanCache(UUID uuid) {
+        // Implementation to clean reward cache
+    }
 
-            if (rewardManager.shouldSendDiscordMessage()) {
-                String message = config.getDiscordConfig().getReachedMessage()
-                        .replace("{user_mention}", user.getAsMention())
-                        .replace("{amount}", String.valueOf(newMessageCount))
-                        .replace("{random_code}", generateRandomCode());
+    // Load rewards configuration from YAML
+    public void loadConfig(Map<String, Object> config) {
+        // Implementation to load messageRewards and sendDiscordMessage from config
+        this.messageRewards = (Map<Integer, List<String>>) config.get("message_rewards");
+        this.sendDiscordMessage = (boolean) config.get("send_discord_message");
+    }
 
-                event.getChannel().sendMessage(message).queue();
-            }
-
-            // Store the reward in the database
-            database.storeUserReward(account.getDiscordId(), account.getMinecraftUUID(), "message_reward");
+    // Example method to handle message rewards
+    public void handleMessageReward(UUID uuid, int messageCount) {
+        List<String> commands = messageRewards.get(messageCount);
+        if (commands != null) {
+            commands.forEach(command -> executeCommand(command.replace("{player_name}", uuid.toString())));
+            if (sendDiscordMessage) sendDiscordMessage(uuid, messageCount);
         }
     }
 
-    public void handleReconnect(LinkedAccount account, User user) {
-        UUID uuid = UUID.fromString(account.getMinecraftUUID());
-
-        // Retrieve cached rewards and give them to the player
-        for (RewardManager.Reward reward : rewardManager.getCachedRewards(uuid).toArray(RewardManager.Reward[]::new)) {
-            rewardManager.give(reward, uuid);
-        }
-
-        // Clear the cache after giving rewards
-        rewardManager.cleanCache(uuid);
+    private void executeCommand(String command) {
+        // Implementation to execute the command (e.g., using Vault for economy commands)
+        logger.info("Executing command: " + command);
     }
 
-    public void handleGetCootiesCommand(UUID uuid) {
-        // Cache rewards for the player
-        rewardManager.cacheRewards(uuid);
-    }
-
-    private static String generateRandomCode() {
-        LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMddHHmmss");
-        String formattedNow = now.format(formatter);
-        return CodeGenerator.generateCode(8) + formattedNow;
+    private void sendDiscordMessage(UUID uuid, int messageCount) {
+        // Implementation to send a message to the Discord channel
+        logger.info("Sending Discord message to " + uuid + " for reaching " + messageCount + " messages.");
     }
 }

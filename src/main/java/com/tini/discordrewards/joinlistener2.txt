@@ -1,6 +1,6 @@
 package me.tini.discordrewards;
 
-import me.tini.discordrewards.config.RewardManager;
+import me.tini.discordrewards.config.RewardsElf;
 import me.tini.discordrewards.linking.LinkedAccount;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,13 +17,14 @@ import java.io.IOException;
 import java.io.OutputStream;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.keevers.logging.CustomLogger;
 
 public class DiscordJoinListener extends ListenerAdapter {
 
     private static final Logger logger = LoggerFactory.getLogger(DiscordJoinListener.class);
 
     private final VelocityMariaDB database;
-    private final RewardManager rewardManager;
+    private final RewardsElf RewardsElf;
     private final RewardsElf rewardsElf;
     private final Gson gson;
     private final Map<UUID, String> pending;
@@ -31,10 +32,10 @@ public class DiscordJoinListener extends ListenerAdapter {
     private final File linkedFile;
     private final Map<UUID, String> uuidNameCache;
 
-    public DiscordJoinListener(VelocityMariaDB database, RewardManager rewardManager, File linkedFile) {
+    public DiscordJoinListener(VelocityMariaDB database, RewardsElf RewardsElf, File linkedFile) {
         this.database = database;
-        this.rewardManager = rewardManager;
-        this.rewardsElf = new RewardsElf(database, rewardManager);
+        this.RewardsElf = RewardsElf;
+        this.rewardsElf = new RewardsElf(database, RewardsElf);
         this.gson = new GsonBuilder().setPrettyPrinting().create();
         this.pending = new HashMap<>();
         this.accounts = new HashMap<>();

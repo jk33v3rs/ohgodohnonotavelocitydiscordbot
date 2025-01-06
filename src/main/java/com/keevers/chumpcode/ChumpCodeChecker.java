@@ -1,21 +1,22 @@
 package com.keevers.chumpcode;
 
-import org.slf4j.Logger;
+import com.keevers.logging.CustomLogger;
 
 public class ChumpCodeChecker {
-    private final Logger logger;
+    private static final CustomLogger logger = CustomLogger.getLogger();
 
-    public ChumpCodeChecker(Logger logger) {
-        this.logger = logger;
-    }
+    public ChumpCodeChecker() {}
 
     public boolean isChumpCode(String value) {
-        return value.equals("NeverGonnaGive") || value.equals("YouUpNever") || value.equals("GonnaLetYou") || value.equals("DownNeverGonna") ||
-               value.equals("RunAroundAnd") || value.equals("DesertYouNever") || value.equals("GonnaMakeYou") || value.equals("CryNeverGonna") ||
-               value.equals("SayGoodbyeNever") || value.equals("TellALie") || value.equals("AndHurtYou");
+        return switch (value) {
+            case "NeverGonnaGive", "YouUpNever", "GonnaLetYou", "DownNeverGonna",
+                 "RunAroundAnd", "DesertYouNever", "GonnaMakeYou", "CryNeverGonna",
+                 "SayGoodbyeNever", "TellALie", "AndHurtYou" -> true;
+            default -> false;
+        };
     }
 
     public void printChumpCodeMessage() {
-        logger.error("chump code");
+        logger.severe("chump code");
     }
 }

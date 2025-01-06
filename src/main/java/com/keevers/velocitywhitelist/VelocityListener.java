@@ -1,7 +1,7 @@
 package com.keevers.velocitywhitelist;
 
 import com.keevers.logging.CustomLogger;
-import com.keevers.velocitydiscord.VelocityDiscordBot;
+import com.keevers.velocitydiscordbot.VelocityDiscordBot;
 import com.keevers.velocitymariadb.VelocityMariaDB;
 import com.velocitypowered.api.event.Subscribe;
 import com.velocitypowered.api.event.connection.LoginEvent;
