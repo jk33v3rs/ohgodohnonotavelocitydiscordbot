@@ -1,0 +1,16 @@
+{
+  "id": "velocitywhitelist",
+  "name": "VelocityWhitelist",
+  "version": "1.0.2-SNAPSHOT",
+  "authors": [
+    "jk33v3rs"
+  ],
+  "main": "com.example.velocitywhitelist.VelocityWhitelist",
+  "dependencies": [
+    {
+      "id": "luckperms",
+      "optional": true
+    }
+  ],
+  "description": "A plugin to sync Discord roles with a Velocity whitelist"
+}

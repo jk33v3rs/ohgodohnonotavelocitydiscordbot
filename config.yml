@@ -1,0 +1,43 @@
+# Configuration for ohgodohnonotavelocitydiscordpluginbot
+
+mariadb:
+  host: "localhost"
+  port: 3306
+  user: "user"
+  password: "password"
+  database: "database"
+  table_prefix: "prefix_"
+  ssl: false
+  public_key_retrieval: false
+
+hooks:
+  use_luckperms: true
+  use_vault: false
+
+roles:
+  temp_access: "temp access"
+  certified_cool_kid: "certified cool kid"
+  luckperms_temp_access: "temp_access"
+  luckperms_certified_cool_kid: "certified_cool_kid"
+
+discord:
+  bot_name: "VelocityBot"
+  server_id: "YOUR_SERVER_ID"
+  bot_token: "YOUR_BOT_TOKEN"
+  listen_channels:
+    - "channel_1"
+    - "channel_2"
+  ignore_channels:
+    - "channel_3"
+
+commands:
+  give_cool_kid_juice: "/give cool kid juice to <minecraftusername>"
+  cool_kid_message: "<minecraftusername> got some cool kid juice. How is it?"
+  weird_response: "weird"
+  required_role: "cool kid"
+
+geyser:
+  prefix: "."
+
+# Counter for velocity startups
+startups: 0
